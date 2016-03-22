@@ -1,0 +1,295 @@
+<head>
+
+
+
+    <!-- ************************ CSS Files ************************ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- Basic Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../../../../public/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <!-- Progressbar CSS -->
+    <link rel="stylesheet" href="assets/js/pieprogress/css/rainbow.css">
+    <link rel="stylesheet" href="assets/js/pieprogress/css/progress.css">
+
+    <!-- Revolution Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/rs-plugin/css/settings.css" media="screen" />
+
+    <!-- Carousels CSS -->
+    <link href="assets/js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- Google Fonts & Font-Awesome -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/icons.css">
+
+    <!-- Your Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/my-styles.html">
+
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+
+
+
+<template name="form">
+
+    <style>.panel {
+        width: 300px;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        background-color:#F1F1F1;
+        border:1px solid transparent;
+        -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.05);
+        box-shadow:0 1px 1px rgba(0,0,0,0.05);
+        border-radius:2px;
+    }
+
+    .panel-heading {
+        border-bottom:1px solid transparent;
+        border-top-right-radius:3px;
+        border-top-left-radius:3px;
+        border-radius:2px 2px 0 0;
+        padding:10px 15px;
+        text-align:center;
+    }
+    </style>
+
+
+<!-- ************************ Page Content ************************ -->
+<section class="gray">
+    <article class="container">
+
+        <!-- ************************ Form Area Start ************************ -->
+
+        <div class="start-project">
+            <div class="title">
+                <ul>
+                    <li data-link="basic-data" class="current"><a href="#"><i class="fa fa-pagelines"></i><span> Information Basique</span></a></li>
+                    <li data-link="image-vidoe" class=""><a href="#"><i class="fa fa-file-image-o"></i><span>Ajouter Images ou Video</span></a></li>
+                    <li data-link="creer-compte" class=""><a href="#"><i class="fa fa-user"></i><span>Créer Compte</span></a></li>
+
+                </ul>
+            </div>
+            <hr>
+            <div class="start-content">
+
+                    <div id="basic-data" class="form-wizard active">
+
+                        <div class="form-group">
+                            <div class="form-left">
+                                <input type="text" value=""  id="titre" class="form-control" placeholder=" Titre" name="title">
+                            </div>
+                            <div class="form-right">
+                                <input type="text" value="" id="prix" class="form-control" placeholder="Prix" name="money">
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-left">
+                                <input type="text" value="" id="adresse" class="form-control" placeholder="Adresse" name="adresse">
+                            </div>
+                            <div class="form-right">
+                                <input type="text" value="" class="form-control" placeholder="Numéro" name="num">
+                                <input id="num" name="numero" value="" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
+
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="form-group">
+                                <div class="form-left">
+                                    <select class="form-control arrow-down" id="gouvernorat" name="Gouvernorat">
+                                        <option value="">Selectionner Gouvernorat</option>
+                                        <option value="Tunis">Tunis</option>
+                                        <option value="Ariana">Ariana</option>
+                                        <option value="Béja">Béja</option>
+                                        <option value="Ben Arous">Ben Arous</option>
+                                        <option value="Bizerte">Bizerte</option>
+                                        <option value="Gabès">Gabès</option>
+                                        <option value="Gafsa">Gafsa</option>
+                                        <option value="Jandouba">Jandouba</option>
+                                        <option value="Kourwen">Kourwen</option>
+                                        <option value="Kasserine">Kasserine</option>
+                                        <option value="Gbeli">Gbeli</option>
+                                        <option value="Le Kef">Le Kef</option>
+                                        <option value="Mahdia">Mahdia</option>
+                                        <option value="Manouba">Manouba</option>
+                                        <option value="Mednine">Mednine</option>
+                                        <option value="Monastir">Monastir</option>
+                                        <option value="Nabeul">Nabeul</option>
+                                        <option value="Sfax">Sfax</option>
+                                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                                        <option value="Selyana">Selyana</option>
+                                        <option value="Sousse">Sousse</option>
+                                        <option value="Tataouine">Tataouine</option>
+                                        <option value="Tozeur">Tozeur</option>
+                                        <option value="Zaghouan">Zaghouan</option>
+                                    </select>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="form-right">
+
+                                    <select class="form-control arrow-down" id="categorie" name="categorie">
+                                        <option value="">Selectionner  Categorie</option>
+                                        <option value="Immobilier">--Immobilier--</option>
+                                        <option value="appartement">Appartement</option>
+                                        <option value="maison">Maison</option>
+                                        <option value="bureaux et plateaux">Bureaux et Plateaux</option>
+                                        <option value="magazins et commerces">Magazins et commerces</option>
+                                        <option value="terrains">Terrains</option>
+                                        <option value="collocation">Collocation</option>
+                                        <option value="">--Véhicule--</option>
+                                        <option value="voiture">Voiture</option>
+                                        <option value="moto">Moto</option>
+                                        <option value="fourgonettes">Fourgonettes</option>
+                                        <option value="camions-vehicules-industrielles">Camions et véhicules indistrulles </option>
+                                        <option value="tracteurs-vehicules-agricoles">Tracteurs et véhicules agricoles</option>
+                                        <option value="pieces-de-rechange-accessoires">Pièces de rechange et accessoires</option>
+                                        <option value="">--Emploi, affaires et services--</option>
+                                        <option value="offre d'emloi">Offre d'emloi</option>
+                                        <option value="demande d'emploi">Demande d'emploi</option>
+                                        <option value="services">Services</option>
+                                        <option value="">--Multimédia--</option>
+                                        <option value="téléphonie">Téléphonie</option>
+                                        <option value="informatique et accessoires">Informatique et accessoires</option>
+                                        <option value="image et Son">Image et Son</option>
+                                        <option value="jeux vidéos">Jeux vidéos</option>
+                                        <option value="gadge">Gadget</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="form-group">
+                                    <textarea name="description" id ="desc" class="form-control" placeholder="Description"></textarea>
+
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+
+
+
+                              <div>{{> UI.dynamic template=template}}</div>
+
+                        <div class="next-btn">
+
+                            <button type="button" class="btn btn-4 blue" data-link="image-vidoe" onClick="moveform(this,'image-vidoe')">Suivant</button>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+
+                <div id="image-vidoe" class="form-wizard">
+                    <div class="form-group">
+                        {{> upload_bootstrap }}
+                    </div>
+
+                    <div id="video-inputs" class="imgORvid">
+                        <div class="form-group">
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div id="imgupload-1" class="imgORvid">
+                        <div class="form-group">
+                            {{> upload_bootstrap }}
+                            <div id="add-image-field-cnt"><input type="hidden" value="1" id="imgupload-1" name="imgNumber" ></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="next-btn">
+                        <button type="button" class="btn btn-5 blue" data-link="basic-data" onClick="moveform(this,'basic-data')">Retour</button>
+                        <button type="button" class="btn btn-4 blue" data-link="creer-compte" onClick="moveform(this,'creer-compte')">Suivant</button>
+
+                    </div>
+                </div>
+
+
+                <div id="creer-compte" class="form-wizard">
+                    <div class="container">
+                    <section class="panel" style="margin-left: 270px;">
+                    <header class="panel-heading">
+                    <strong>Welcome</strong>
+                    </header>
+                        {{> _loginButtonsLoggedOutAllServices}}
+                    </section>
+                    </div>
+                    <div class="next-btn">
+                        <button type="button" class="btn btn-5 blue" data-link="image-vidoe" onClick="moveform(this,'image-vidoe')">Retour</button>
+                        <button type="submit"  id ="valider" class="btn btn-4 blue">Valider</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+         </article>
+
+
+
+    </section>
+
+
+
+
+<!-- ************************ jQuery Scripts ************************ -->
+
+<!-- jQuery (necessary for JavaScript plugins) -->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/migrate.js"></script>
+
+<!-- Bootstrap Javascript -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<!-- Progressbar -->
+<script type="text/javascript" src="assets/js/pieprogress/scripts/rainbow.min.js"></script>
+<script type="text/javascript" src="assets/js/pieprogress/scripts/jquery-asPieProgress.js"></script>
+
+<!-- Revolution Slider -->
+<script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Carousels js -->
+<script type="text/javascript" src="assets/js/bxslider/jquery.bxslider.min.js"></script>
+
+<!-- Google Maps -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.exp"></script>
+<script type="text/javascript" src="assets/js/maps/scripts/jquery.gmap.min.js"></script>
+
+<!--Custom Scroll Bar -->
+<script type="text/javascript" src="assets/js/jquery.scroll.js"></script>
+
+<!-- Grayscale Images -->
+<script type="text/javascript" src="assets/js/jquery.hoverizr.min.js"></script>
+
+<!-- Custom Settings -->
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<!-- Jquery Plugins - (For Selectbox, EventCountDown) -->
+<script type="text/javascript" src="assets/js/plugin.js"></script>
+
+<!-- Event Countdown -->
+<script type="text/javascript" src="assets/js/countdown.js"></script>
+
+<!-- Retina Script -->
+<script type="text/javascript" src="assets/js/retina.min.js"></script>
+
+</template>

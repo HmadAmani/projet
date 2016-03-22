@@ -1,0 +1,48 @@
+Package.describe({
+  name: 'webclient',
+  version: '0.0.1',
+  // Brief, one-line summary of the package.
+  summary: '',
+  // URL to the Git repository containing the source code for this package.
+  git: '',
+  // By default, Meteor will default to using README.md for documentation.
+  // To avoid submitting documentation, set this field to null.
+  documentation: 'README.md'
+});
+
+Package.onUse(function(api) {
+  api.versionsFrom('1.2.1');
+  api.use('ecmascript');
+  api.use('jquery');
+  api.use('iron:router');
+  api.use('blaze-html-templates');
+  api.addFiles([
+      'client/annonce/list-annonce.html',
+      'client/annonce/listannonce.js',
+      'client/annonce/annonce.html',
+      'client/annonce/annonce.js',
+      'client/formulaire/formulaire.html',
+      'client/formulaire/formulaire.js',
+      'client/compte/compte.html',
+      'client/compte/compte.js',
+      'client/contact/contact.html',
+      'client/accueil/accueil.html',
+      'client/accueil/accueil.js',
+      'client/formulaire/form.html',
+      'client/formulaire/form.js',
+      'client/init.js'
+
+
+
+
+  ], 'client');
+api.addFiles('client/route.js');
+});
+
+
+Package.onTest(function(api) {
+  api.use('ecmascript');
+  api.use('tinytest');
+  api.use('webclient');
+  //api.addFiles('webclient-tests.js');
+});

@@ -1,0 +1,636 @@
+<template name="Appartement">
+
+
+        <div class="form-group">
+
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Type">
+                    <option value="">Selectionner  Type d'annonce</option>
+                    <option value="Animals">Offre de vente</option>
+                    <option value="Community">Offre de location</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Nombre de pièces">
+                    <option value="">Selectionner Nombre de pièces</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">Plus que 5</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Surface habitale en m²" name="surface[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Place de parking">
+                    <option value="">Selectionner Place de parking</option>
+                    <option value="">oui</option>
+                    <option value="">non</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Salles de bain">
+                    <option value="">Selectionner Salles de bain</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">Plus que 5</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+</template>
+
+<template name="Maison">
+
+        <div class="form-group">
+
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Type">
+                    <option value="">Selectionner  Type d'annonce</option>
+                    <option value="Animals">Offre de vente</option>
+                    <option value="Community">Offre de location</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Nombre de pièces">
+                    <option value="">Selectionner Nombre de pièces</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">Plus que 5</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Surface habitale en m²" name="surface[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Surface de la propriété en m²" name="surfacepropriete[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Place de parking">
+                    <option value="">Selectionner Place de parking</option>
+                    <option value="">oui</option>
+                    <option value="">non</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Salles de bain">
+                    <option value="">Selectionner Salles de bain</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">Plus que 5</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+</template>
+
+<template name="Bureaux et Plateaux">
+
+        <div class="form-group">
+
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Type">
+                    <option value="">Selectionner  Type d'annonce</option>
+                    <option value="Animals">Offre de vente</option>
+                    <option value="Community">Offre de location</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Nombre de pièces">
+                    <option value="">Selectionner Nombre de pièces</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">Plus que 5</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Surface habitale en m²" name="surface[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+</template>
+
+<template name="Magazins et Commerces">
+    <div id="data" class="form-wizard active">
+        <div class="form-group">
+
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Type">
+                    <option value="">Selectionner  Type d'annonce</option>
+                    <option value="Animals">Offre de vente</option>
+                    <option value="Community">Offre de location</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Surface habitale en m²" name="surface[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</template>
+
+<template name="Terrains">
+    <div id="data" class="form-wizard active">
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Type" name="type[]">
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Surface habitale en m²" name="surface[]">
+            </div>
+        </div>
+
+        <div class="clear"> </div>
+    </div>
+
+</template>
+
+<template name="collocation">
+
+    <div id="data" class="form-wizard active">
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Surface habitale en m²" name="surface[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="form-group">
+
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Entièrement meublé">
+                    <option value="">Sélectionner Entièrement meublé</option>
+                    <option value="">Oui</option>
+                    <option value="">Non</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+</div>
+</template>
+
+<template name="Voiture">
+
+        <div class="form-group">
+
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Marque">
+                    <option value="">Selectionner  Marque</option>
+                    <option value="Animals">Megane</option>
+                    <option value="Community">Passate</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Carrosserie">
+                    <option value="">Selectionner Carrosserie</option>
+                    <option value="">Berline</option>
+                    <option value="An Individual">Coupé</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Année-modèle">
+                    <option value="">Selectionner Année-modèle</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Kilométrage">
+                    <option value="">Selectionner Kilométrage</option>
+                    <option value="">0-5000</option>
+                    <option value="">5000-10000</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Energie">
+                    <option value="">Selectionner Energie</option>
+                    <option value="">Diesel</option>
+                    <option value="">Essence</option>
+                    <option value="">GPL</option>
+                    <option value="">Autre</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Boite à vitesse">
+                    <option value="">Selectionner Boite à vitesse</option>
+                    <option value="">Automatique</option>
+                    <option value="">Manuelle</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Transmission">
+                    <option value="">Selectionner Transmission</option>
+                    <option value="">2*2</option>
+                    <option value="">2*4</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Puissance Fiscale">
+                    <option value="">Selectionner Puissance Fiscale</option>
+                    <option value="">4C</option>
+                    <option value="">6C</option>
+                    <option value="">7C</option>
+                    <option value="">8C</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Condition">
+                    <option value="">Selectionner Condition</option>
+                    <option value="">Occasion</option>
+                    <option value="">Neuf</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+</template>
+
+<template name="Fourgonettes">
+
+        <div class="form-group">
+
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Type d'annonce">
+                    <option value="">Selectionner  Type d'annonce</option>
+                    <option value="">Offre de vente</option>
+                    <option value="">Offre de l'occation</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Année-modèle">
+                    <option value="">Selectionner Année-modèle</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Kilométrage">
+                    <option value="">Selectionner Kilométrage</option>
+                    <option value="">0-5000</option>
+                    <option value="">5000-10000</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Energie">
+                    <option value="">Selectionner Energie</option>
+                    <option value="">Diesel</option>
+                    <option value="">Essence</option>
+                    <option value="">GPL</option>
+                    <option value="">Autre</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Puissance Fiscale">
+                    <option value="">Selectionner Puissance Fiscale</option>
+                    <option value="">4C</option>
+                    <option value="">6C</option>
+                    <option value="">7C</option>
+                    <option value="">8C</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Condition">
+                    <option value="">Selectionner Condition</option>
+                    <option value="">Occasion</option>
+                    <option value="">Neuf</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+</template>
+
+<template name="Moto">
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Carrosserie Moto">
+                    <option value="">Selectionner Carrosserie Moto</option>
+                    <option value="">Basique</option>
+                    <option value="">Sportive</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Année-modèle">
+                    <option value="">Selectionner Année-modèle</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Kilométrage">
+                    <option value="">Selectionner Kilométrage</option>
+                    <option value="">0-5000</option>
+                    <option value="">5000-10000</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Cylindrée" name="cylindrée[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Condition">
+                    <option value="">Selectionner Condition</option>
+                    <option value="">Occasion</option>
+                    <option value="">Neuf</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+</template>
+
+<template name="Camions et véhicules indistrulles">
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Année-modèle">
+                    <option value="">Selectionner Année-modèle</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Kilométrage">
+                    <option value="">Selectionner Kilométrage</option>
+                    <option value="">0-5000</option>
+                    <option value="">5000-10000</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Energie">
+                    <option value="">Selectionner Energie</option>
+                    <option value="">Diesel</option>
+                    <option value="">Essence</option>
+                    <option value="">GPL</option>
+                    <option value="">Autre</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Condition">
+                    <option value="">Selectionner Condition</option>
+                    <option value="">Occasion</option>
+                    <option value="">Neuf</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+</template>
+
+<template name="Tracteurs et véhicules agricoles">
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Année-modèle">
+                    <option value="">Selectionner Année-modèle</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Kilométrage">
+                    <option value="">Selectionner Kilométrage</option>
+                    <option value="">0-5000</option>
+                    <option value="">5000-10000</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Energie">
+                    <option value="">Selectionner Energie</option>
+                    <option value="">Diesel</option>
+                    <option value="">Essence</option>
+                    <option value="">GPL</option>
+                    <option value="">Autre</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Condition">
+                    <option value="">Selectionner Condition</option>
+                    <option value="">Occasion</option>
+                    <option value="">Neuf</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+</template>
+
+<template name="Pièces de rechange et accessoires">
+
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Type" name="type[]">
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Marque" name="marque[]">
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="form-group">
+            <div class="form-left">
+                <input type="text" value="" class="form-control" placeholder="Modèle" name="modèle[]">
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Année-modèle">
+                    <option value="">Selectionner Année-modèle</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-left">
+                <select class="form-control arrow-down" name="Condition">
+                    <option value="">Selectionner Condition</option>
+                    <option value="">Occasion</option>
+                    <option value="">Neuf</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+</template>
