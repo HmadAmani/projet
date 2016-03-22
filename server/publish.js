@@ -1,6 +1,7 @@
 
 Meteor.publish('list', function(){
   return Annonce.find({});
+  return Annonce.find({});
 });
 
 Meteor.publish('annonce', function(id){
