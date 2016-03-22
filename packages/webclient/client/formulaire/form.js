@@ -15,11 +15,11 @@ Template.form.helpers({
     }
 
 });
-
+//$('#titre').popover(options);
 Template.form.events({
     'click #valider': function(){
         annonce = {};
-        annonce.titre = $('#titre').val();
+        annonce.titre = $('#titre').val().popover('show');
         annonce.adresse = $('#adresse').val();
         annonce.description = $('#desc').val();
         annonce.prix = Number($('#prix').val());
