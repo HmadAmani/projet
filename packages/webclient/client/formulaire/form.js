@@ -4,6 +4,7 @@
 Template.form.helpers({
     annonce: function() {
 
+        console.log(Annonce.findOne());
         return Annonce.findOne();
     },
     filesToUpload: function() {
