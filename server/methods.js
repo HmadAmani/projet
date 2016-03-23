@@ -12,7 +12,7 @@ Meteor.methods({
         check(an.gouvernorat, String);
         check(an.image,String);
         Annonce.insert(an);
-        console.log(Annonce);
+        //console.log(Annonce);
     },
 
     'deleteFile': function(_id) {
