@@ -15,7 +15,7 @@ Template.form.helpers({
     }
 
 });
-//$('#titre').popover(options);
+
 Template.form.events({
     'click #valider': function(){
         annonce = {};
@@ -26,12 +26,7 @@ Template.form.events({
         annonce.categorie= $('#categorie').val();
         annonce.gouvernorat = $('#gouvernorat').val();
         annonce.image = $('#imgupload-1').val();
-        Meteor.call('create', annonce);
-    },
-    "change #categorie" :function() {
-        categorie = $("#categorie option:selected").text();
-        Session.set("template",categorie);
-
+        var template = Session.get('template');
         switch(template) {
             case'Appartement':
                 annonce.type = $('#type').val();
@@ -39,7 +34,6 @@ Template.form.events({
                 annonce.surface = $('#surface').val();
                 annonce.placeparking = $('#placeparking').val();
                 annonce.nombresalledebain = $('#nombresalledebain').val();
-
                 break;
             case 'Maison':
                 annonce.type = $('#type').val();
@@ -84,7 +78,8 @@ Template.form.events({
                 annonce.energie = $('#energie').val();
                 annonce.puissance = $('#puissance').val();
                 annonce.condition = $('#condition').val();
-             break;
+                // Meteor.call('create', annonce);
+                break;
 
             case'Moto':
                 annonce.carrosserie = $('#carrosserie').val();
@@ -92,18 +87,21 @@ Template.form.events({
                 annonce.kilometrage = $('#kilometrage').val();
                 annonce.cylindre = $('#cylindre').val();
                 annonce.condition = $('#condition').val();
+                // Meteor.call('create', annonce);
                 break;
             case'Camions et véhicules indistrulles':
                 annonce.anneemodel = $('#anneemodel').val();
                 annonce.kilometrage = $('#kilometrage').val();
                 annonce.energie = $('#energie').val();
                 annonce.condition = $('#condition').val();
+                //  Meteor.call('create', annonce);
                 break;
             case'Tracteurs et véhicules agricoles':
                 annonce.anneemodel = $('#anneemodel').val();
                 annonce.kilometrage = $('#kilometrage').val();
                 annonce.energie = $('#energie').val();
                 annonce.condition = $('#condition').val();
+                //Meteor.call('create', annonce);
                 break;
             case'Pièces de rechange et accessoires':
                 annonce.type = $('#type').val();
@@ -112,6 +110,12 @@ Template.form.events({
                 annonce.anneemodel = $('#anneemodel').val();
                 annonce.condition = $('#condition').val();
 
+
         }
+        Meteor.call('create', annonce);
+    },
+    "change #categorie" :function() {
+        categorie = $("#categorie option:selected").text();
+        Session.set("template",categorie);
     }
 });
