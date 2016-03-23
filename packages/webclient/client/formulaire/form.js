@@ -19,7 +19,7 @@ Template.form.helpers({
 Template.form.events({
     'click #valider': function(){
         annonce = {};
-        annonce.titre = $('#titre').val().popover('show');
+        annonce.titre = $('#titre').val();
         annonce.adresse = $('#adresse').val();
         annonce.description = $('#desc').val();
         annonce.prix = Number($('#prix').val());

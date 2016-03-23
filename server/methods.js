@@ -1,9 +1,8 @@
 
 
-
-
 Meteor.methods({
     create: function (an) {
+       // var an={};
         check(an.titre, String);
         check(an.adresse, String);
         check(an.description, String);
@@ -12,7 +11,7 @@ Meteor.methods({
         check(an.gouvernorat, String);
         check(an.image,String);
         Annonce.insert(an);
-        //console.log(Annonce);
+        console.log(Annonce);
     },
 
     'deleteFile': function(_id) {
