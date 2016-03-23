@@ -12,6 +12,7 @@ Meteor.methods({
         check(an.gouvernorat, String);
         check(an.image,String);
         Annonce.insert(an);
+        console.log(Annonce);
     },
 
     'deleteFile': function(_id) {
@@ -19,7 +20,7 @@ Meteor.methods({
 
         var upload = Uploads.findOne(_id);
         if (upload == null) {
-            throw new Meteor.Error(404, 'Upload not found'); // maybe some other code
+            throw new Meteor.Error(404, 'Upload not found');
         }
 
         UploadServer.delete(upload.path);
