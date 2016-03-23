@@ -1,8 +1,10 @@
 Template.index.events({
-    'click': function (){
-
+    'click #recherche': function (){
+    Router.go('/listeannonce');
     } ,
-    'click button.Déposer annonce': function (event,template ) {
-        console.log('event fired');
-    }
+    'click #deposer': function (){
+     Router.go('/form');
+    } ,
+
+
 });
