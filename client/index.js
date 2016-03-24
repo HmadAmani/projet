@@ -1,10 +1,12 @@
 Template.index.events({
-    'click #recherche': function (){
+    'click #rechercheannonce': function (){
     Router.go('/listeannonce');
     } ,
     'click #deposer': function (){
      Router.go('/form');
     } ,
+    'click #recherche': function (){
 
+    } ,
 
 });
