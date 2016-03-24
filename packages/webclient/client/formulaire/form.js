@@ -56,7 +56,7 @@ Template.form.events({
                 annonce.type = $('#type').val();
                 annonce.surface = $('#surface').val();
                 break;
-            case 'collocation':
+            case 'Collocation':
                 annonce.surfaceh = $('#surfaceh').val();
                 annonce.meuble = $('#meuble').val();
                 break;
@@ -87,7 +87,7 @@ Template.form.events({
                 annonce.cylindre = $('#cylindre').val();
                 annonce.condition = $('#condition').val();
                 break;
-            case'Camions et véhicules indistrulles':
+            case'camions et véhicules indistrulles':
                 annonce.anneemodel = $('#anneemodel').val();
                 annonce.kilometrage = $('#kilometrage').val();
                 annonce.energie = $('#energie').val();
