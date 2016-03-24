@@ -2,7 +2,6 @@
 
 Meteor.methods({
     create: function (an) {
-       // var an={};
         check(an.titre, String);
         check(an.adresse, String);
         check(an.description, String);
@@ -13,6 +12,11 @@ Meteor.methods({
         Annonce.insert(an);
         console.log(Annonce);
     },
+        'rech':function(an){
+            check(an.adresse,String);
+            console.log(Annonce);
+
+      },
 
     'deleteFile': function(_id) {
         check(_id, String);

@@ -1,8 +1,8 @@
 Accounts.ui.config({
     requestPermissions: {},
     extraSignupFields: [{
-        fieldName: 'first-name',
-        fieldLabel: 'First name',
+        fieldName: 'Nom',
+        fieldLabel: 'Nom',
         inputType: 'text',
         visible: true,
         validate: function(value, errorFunction) {
@@ -14,8 +14,8 @@ Accounts.ui.config({
             }
         }
     }, {
-        fieldName: 'last-name',
-        fieldLabel: 'Last name',
+        fieldName: 'Prénom',
+        fieldLabel: 'Prénom',
         inputType: 'text',
         visible: true,
     }, {
