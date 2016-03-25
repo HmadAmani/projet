@@ -48,7 +48,7 @@ Template.form.events({
                 annonce.nombrepiece = $('#nombrepiece').val();
                 annonce.surface = $('#surface').val();
                 break;
-            case'Magazins et Commerces':
+            case'Magazins et commerces':
                 annonce.type = $('#type').val();
                 annonce.surface = $('#surface').val();
                 break;
@@ -87,7 +87,7 @@ Template.form.events({
                 annonce.cylindre = $('#cylindre').val();
                 annonce.condition = $('#condition').val();
                 break;
-            case'camions et véhicules indistrulles':
+            case'Camions indistrulles':
                 annonce.anneemodel = $('#anneemodel').val();
                 annonce.kilometrage = $('#kilometrage').val();
                 annonce.energie = $('#energie').val();

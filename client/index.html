@@ -151,76 +151,101 @@
     <div class="mainmenu-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="catemenu-toggler">
-                        <i class="fa fa-bars"></i>
-                        <span>Category</span>
-                    </div>
-                </div>
+
                 <div class="col-lg-9 col-md-9">
                     <div class="main-menu">
                         <nav>
                             <ul>
                                 <li><a href="index.html">Toutes les catégories<i class="fa fa-angle-down"></i></a>
                                     <ul class="sup-menu">
-                                        <li><a href="">Voitures</a></li>
-                                        <li><a href="">Motos</a></li>
-                                        <li><a href="">Camions et véhicules indistruels</a></li>
-                                        <li><a href="">Tracteurs et véhicules agrigoles</a></li>
-                                        <li><a href="">Pièces de rechange et accessoires</a></li>
-                                        <li><a href="">Fourgonettes</a></li>
-                                        <li><a href="">Appartement</a></li>
-                                        <li><a href="">Maison</a></li>
-                                        <li><a href="">Bureaux et plateaux</a></li>
-                                        <li><a href="">Magazin et commerce</a></li>
-                                        <li><a href="">Terrain</a></li>
-                                        <li><a href="">Immobilier de vacances</a></li>
-                                        <li><a href="">Colocation</a></li>
-                                        <li><a href="">Téléphonie</a></li>
-                                        <li><a href="">Images & son</a></li>
-                                        <li><a href="">Informatique et accessoires</a></li>
-                                        <li><a href="">Jeux vidéos </a></li>
-                                        <li><a href="">Demande d'emploi</a></li>
-                                        <li><a href="">Services</a></li>
+
+                                        <div class="mega-menu">
+                                            <div class="single-mega-menu">
+                                                <h3 class="hedding-border"><a href="shop.html">Immobiliers</a></h3>
+                                                <a href="shop.html">Appartement</a>
+                                                <a href="shop-grid-view.html">Maison</a>
+                                                <a href="shop-grid-view.html">Collocation</a>
+                                                <a href="shop-list-view.html">Terrains</a>
+                                                <a href="shop-list-view.html">Bureaux et plateaux</a>
+                                                <a href="shop-list-view.html">Magazins et commerces</a>
+                                            </div>
+                                            <div class="single-mega-menu">
+                                                <h3 class="hedding-border"><a href="shop.html">Véhicules</a></h3>
+                                                <a href="shop-list-category.html">Voiture</a>
+                                                <a href="my-account.html">Fouronettes</a>
+                                                <a href="wishlist.html">Camions et véhicules</a>
+                                                <a href="cart.html">Motos</a>
+                                                <a href="checkout.html">Tracteurs et véhicules agricoles</a>
+                                                <a href="shop-list-view.html">Pièces de rechange et accessoires</a>
+                                            </div>
+                                            <div class="single-mega-menu">
+                                                <h3 class="hedding-border"><a href="product-variable.html">Multiméia</a></h3>
+                                                <a href="product-simple.html">Téléphonie</a>
+                                                <a href="product-variable.html">Image et son</a>
+                                                <a href="product-simple.html">Informatique et accesoires</a>
+                                                <a href="product-simple.html">Jeux vidéos</a>
+                                            </div>
+                                            <div class="single-mega-menu">
+                                                <h3 class="hedding-border"><a href="product-variable.html">Emploi , affaires et services</a></h3>
+                                                <a href="product-simple.html">Téléphonie</a>
+                                                <a href="product-variable.html">Image et son</a>
+                                                <a href="product-simple.html">Informatique et accesoires</a>
+                                                <a href="product-simple.html">Jeux vidéos</a>
+                                            </div>
+                                        </div>
 
                                     </ul>
                                 </li>
                                 <li><a href="shop.html">Toute la Tunisie<i class="fa fa-angle-down"></i></a>
 
                                         <ul class="sup-menu">
-
+                                            <div class="mega-menu">
+                                            <div class="single-mega-menu">
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Tunis"}}">Tunis</a></li>
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Ariana"}}">Ariana</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Béja"}}">Béja</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Ben Arous"}}">Ben Arous</a></li>
+                                            </div>
+                                            <div class="single-mega-menu">
                                              <li><a href="{{pathFor 'listannonce' gouvernorat="Bizerte"}}">Bizerte</a></li>
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Gabès"}}">Gabès</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Gafsa"}}">Gafsa</a></li>
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Jandouba"}}">Jandouba</a></li>
+                                                </div>
+                                            <div class="single-mega-menu">
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Kerwen"}}">Kerwen</a></li>
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Kasserine"}}">kasserine</a></li>
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Gbeli"}}">Gbeli</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Le Kef"}}">Le Kef</a></li>
+                                                </div>
+                                            <div class="single-mega-menu">
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Mahdia"}}">Mahdia</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Manouba"}}">Manouba</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Mednine"}}">Mednine</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Monastir"}}">Monastir</a></li>
+                                                </div>
+                                            <div class="single-mega-menu">
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Nabeul"}}">Nabeul</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Sfax"}}">Sfax</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Sidi Bouzid"}}">Sidi Bouzid</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Selyena"}}">Selyana</a></li>
+                                                </div>
+                                            <div class="single-mega-menu">
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="sousse"}}">Sousse</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Tataouine"}}">Tataouine</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Tozeur"}}">Tozeur</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Zaghouan"}}">Zaghouan</a></li>
+                                         </div>
+                                                </div>
                                                 </ul>
 
                                 </li>
 
 
                                 <li>
+                                   <div>
+                                    <input type="text" placeholder="" value="Search product..." onblur="if (this.value == '') {this.value = 'Search product...';}" onfocus="if (this.value == 'Search product...') {this.value = '';}">
 
-     <input type="text" placeholder="" value="Code postal..." onblur="if (this.value == '') {this.value = 'Search product...';}" onfocus="if (this.value == 'Search product...') {this.value = '';}">
+                               </div>
 
                                 </li>
                                 <li>  <a href=" " class="btn btn-4 blue" background="#3399cc" id="Rechercher">Rechercher</a></li>
@@ -247,70 +272,12 @@
                                 <a href="#" class="arrow">
                                  </a>
 
-                            <li>
-                                <a href="#" class="arrow">
-                                    <i class="fa fa-shirtsinbulk"></i>
-                                    Immobilier
-                                </a>
-                                <ul class="cat-sup-menu">
-                                    <li><a href="shop-grid-category.html">Appartement</a></li>
-                                    <li><a href="shop-grid-category.html">Maison</a></li>
-                                    <li><a href="shop-grid-category.html">Bureaux et plateaux</a></li>
-                                    <li><a href="shop-grid-category.html">Magazin et commerce</a></li>
-                                    <li><a href="shop-grid-category.html">Terrain</a></li>
-                                    <li><a href="shop-grid-category.html">Immobilier de vacances</a></li>
-                                    <li><a href="shop-grid-category.html">Colocation</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="arrow">
-                                    <i class="fa fa-camera"></i>
-                                    Véhicules
-                                </a>
-                                <ul class="cat-sup-menu">
-                                    <li><a href="shop-grid-category.html">Voiture</a></li>
-                                    <li><a href="shop-grid-category.html">Motos</a></li>
-                                    <li><a href="shop-grid-category.html">Camions et véhicules indistruels</a></li>
-                                    <li><a href="shop-grid-category.html">Tracteurs et véhicules agrigoles</a></li>
-                                    <li><a href="shop-grid-category.html">Fourgonettes</a></li>
-                                    <li><a href="shop-grid-category.html">Pièces de rechange et accessoires</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="arrow">
-                                    <i class="fa fa-tablet"></i>
-                                    Multimédia
-                                </a>
-                                <ul class="cat-sup-menu">
-                                    <li><a href="shop-grid-category.html">Téléphonie</a></li>
-                                    <li><a href="shop-grid-category.html">Images & son</a></li>
-                                    <li><a href="shop-grid-category.html">Informatique et accessoires</a></li>
-                                    <li><a href="shop-grid-category.html">Jeux vidéos </a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="shop-grid-category.html">
-                                    <i class="fa fa-futbol-o"></i>
-                                    Emploi , affaires et services
-                                </a>
-                                <ul class="cat-sup-menu">
-                                    <li><a href="shop-grid-category.html">Offre d'emploi</a></li>
-                                    <li><a href="shop-grid-category.html">Demande d'emploi</a></li>
-                                    <li><a href="shop-grid-category.html">Services</a></li>
-                                    <li><a href="shop-grid-category.html">Jeux vidéos </a></li>
-                                </ul>
-                            </li>
+
+
                          </li>
 
                         </ul>
-                        <div class="morelesscate">
-								<span class="morecate">
-									<i class="fa fa-plus"></i>Plus de Categories
-								</span>
-								<span class="lesscate">
-									<i class="fa fa-minus"></i>Fermer Menu
-								</span>
-                        </div>
+
                     </div>
                 </div>
                 </div>
@@ -414,10 +381,72 @@
     </div>
 </footer>
 
+    <!-- JS -->
+    <!-- jquery js -->
+    <script src="/js/vendor/jquery-1.11.3.min.js"></script>
 
-    <script src="js/img-zoom/jquery.simpleLens.min.js"></script>
-    <script src="js/jquery.meanmenu.js"></script>
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
 
+    <!-- owl.carousel.min js -->
+    <script src="/js/owl.carousel.min.js"></script>
+
+    <!-- Mobile Menu js -->
+    <script src="/js/jquery.meanmenu.js"></script>
+
+    <!-- FILTER_PRICE js -->
+    <script src="/js/jquery-ui.min.js"></script>
+
+    <!-- mixitup js -->
+    <script src="/js/jquery.mixitup.min.js"></script>
+
+    <!-- fancybox js -->
+    <script src="/js/fancybox/jquery.fancybox.pack.js"></script>
+
+    <!-- Img Zoom js -->
+    <script src="/js/img-zoom/jquery.simpleLens.min.js"></script>
+
+    <!-- jquery.countdown js -->
+    <script src="/js/jquery.countdown.min.js"></script>
+
+    <!-- parallax js -->
+    <script src="/js/parallax.js"></script>
+
+    <!-- jquery.collapse js -->
+    <script src="/js/jquery.collapse.js"></script>
+
+    <!-- jquery.easing js -->
+    <script src="/js/jquery.easing.1.3.min.js"></script>
+
+    <!-- jquery.scrollUp js -->
+    <script src="/js/jquery.scrollUp.min.js"></script>
+
+    <!-- knob circle js -->
+    <script src="/js/jquery.knob.js"></script>
+
+    <!-- jquery.appear js -->
+    <script src="/js/jquery.appear.js"></script>
+
+    <!-- jquery.counterup js -->
+    <script src="/js/jquery.counterup.min.js"></script>
+    <script src="/js/waypoints.min.js"></script>
+
+    <!-- wow js -->
+    <script src="/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- rs-plugin js -->
+    <script type="text/javascript" src="lib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="lib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="lib/rs-plugin/rs.home.js"></script>
+
+    <!-- plugins js -->
+    <script src="/js/plugins.js"></script>
+
+    <!-- main js -->
+    <script src="/js/main.js"></script>
 
 <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"><i class="fa fa-angle-up"></i></a>
 
