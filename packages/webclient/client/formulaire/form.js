@@ -43,6 +43,14 @@ Template.form.events({
                 annonce.placeparking = $('#placeparking').val();
                 annonce.nombresalledebain = $('#nombresalledebain').val();
                 break;
+            case 'Immobilier de vacances':
+                annonce.type = $('#type').val();
+                annonce.nombrepiece = $('#nombrepiece').val();
+                annonce.surfaceh = $('#surfaceh').val();
+                annonce.surfacep = $('#surfacep').val();
+                annonce.placeparking = $('#placeparking').val();
+                annonce.nombresalledebain = $('#nombresalledebain').val();
+                break;
             case'Bureaux et Plateaux':
                 annonce.type = $('#type').val();
                 annonce.nombrepiece = $('#nombrepiece').val();

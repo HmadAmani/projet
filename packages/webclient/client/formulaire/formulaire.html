@@ -132,6 +132,74 @@
         </div>
 
 </template>
+<template name="Immobilier de vacances">
+
+    <div class="form-group">
+
+        <div class="form-left">
+            <select class="form-control arrow-down" name="Type" id="type">
+                <option value="">Selectionner  Type d'annonce</option>
+                <option value="Offre de vente">Offre de vente</option>
+                <option value="Offre de location">Offre de location</option>
+            </select>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="form-group">
+        <div class="form-left">
+            <select class="form-control arrow-down" name="Nombre de pièces" id="nombrepiece">
+                <option value="">Selectionner Nombre de pièces</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="Plus que 5">Plus que 5</option>
+            </select>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="form-group">
+        <div class="form-left">
+            <input type="text" value="" class="form-control" placeholder="Surface habitale en m²" id="surfaceh" name="surface[]">
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="form-group">
+        <div class="form-left">
+            <input type="text" value="" class="form-control" placeholder="Surface de la propriété en m²" id="surfacep" name="surfacepropriete[]">
+        </div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="form-group">
+        <div class="form-left">
+            <select class="form-control arrow-down" name="Place de parking" id="placeparking">
+                <option value="">Selectionner Place de parking</option>
+                <option value="oui">oui</option>
+                <option value="non">non</option>
+            </select>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="form-group">
+        <div class="form-left">
+            <select class="form-control arrow-down" name="Salles de bain" id="nombresalledebain">
+                <option value="">Selectionner Salles de bain</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">Plus que 5</option>
+            </select>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</template>
 
 <template name="Bureaux et Plateaux">
 

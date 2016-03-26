@@ -162,42 +162,45 @@
                                         <div class="mega-menu">
                                             <div class="single-mega-menu">
                                                 <h3 class="hedding-border">Immobiliers</h3>
-                                                <a href="{{pathFor 'listannonce' categorie="Appartement"}}">Appartement</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Maison"}}">Maison</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Collocation"}}">Collocation</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Terrains"}}">Terrains</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Bureaux et plateaux"}}">Bureaux et plateaux</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Magazins et commerces"}}">Magazins et commerces</a>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="maison"}}">Maison</a></li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="bureaux et plateaux"}}">Bureaux et plateaux</a></li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="magazins et commerces"}}">Magazins et commerces</a></li>
+                                                <li><a href="{{pathFor 'listannonce' categorie="Terrains"}}">Terrains</a></li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="Immobilier de vacances"}}">Immobilier de vacances</a></li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="Collocation"}}">Collocation</a></li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="Autre Immobilier"}}">Autre Immobilier</a></li>
                                             </div>
                                             <div class="single-mega-menu">
                                                 <h3 class="hedding-border">Véhicules</h3>
-                                                <a href="{{pathFor 'listannonce' categorie="Voiture"}}">Voiture</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Fourgonettes"}}">Fourgonettes</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Autres véhicules indistrielles"}}">Autres véhicules industrielles</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Motos"}}">Motos</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Tracteurs et véhicules agricoles"}}">Tracteurs et véhicules agricoles</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Pièces de rechange et accessoires"}}">Pièces de rechange et accessoires</a>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="voiture"}}"> Voiture</a> </li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="moto"}}"> Motos</a> </li>
+                                                <li>  <a href="{{pathFor 'listannonce' categorie="Autres véhicules industrielles"}}">Autres véhicules industrielles</a></li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="Tracteurs et véhicules agricoles"}}">Tracteurs et véhicules agrigoles</a></li>
+                                                <li> <a href="{{pathFor 'listannonce' categorie="fourgonettes"}}">Fourgonettes</a></li>
+                                                <li>  <a href="{{pathFor 'listannonce' categorie="Pièces de rechange et accessoires"}}">Pièces de rechange et accessoires</a></li>
+
                                             </div>
                                             <div class="single-mega-menu">
                                                 <h3 class="hedding-border">Emploi , affaires et services</h3>
-                                                <a href="{{pathFor 'listannonce' categorie="Demande d'emploi"}}">Demande d'emploi</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Offre d'emploi"}}">Offre d'emploi</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Services"}}">Services</a>
+                                                <li><a href="{{pathFor 'listannonce' categorie="offre d'enmploi"}}">Offre d'emploi</a></li>
+                                                <li><a href="{{pathFor 'listannonce' categorie="demande d'emploi"}}">Demande d'emploi</a></li>
+                                                <li><a href="{{pathFor 'listannonce' categorie="services"}}">Services</a></li>
+
 
                                             </div>
                                             <div class="single-mega-menu">
                                                 <h3 class="hedding-border"><a href="product-variable.html">Multimédia</a></h3>
-                                                <a href="{{pathFor 'listannonce' categorie="Téléphonie"}}">Téléphonie</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Image et son"}}">Image et son</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Informatique et accessoires"}}">Informatique et accesoires</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Jeux vidéos"}}">Jeux vidéos</a>
-                                                <a href="{{pathFor 'listannonce' categorie="Gadget"}}">Gadget</a>
+                                                <li><a href="{{pathFor 'listannonce' categorie="téléphonie"}}">Téléphonie</a></li>
+                                                <li><a href="{{pathFor 'listannonce' categorie="image et son"}}">Images et son</a></li>
+                                                <li><a href="{{pathFor 'listannonce' categorie="informatique et accessoires"}}">Informatique et accessoires</a></li>
+                                                <li><a href="{{pathFor 'listannonce' categorie="jeux vidéos"}}">Jeux vidéos </a></li>
+                                                <li><a href="{{pathFor 'listannonce' categorie="gadget"}}">Gadget </a></li>
                                             </div>
                                         </div>
 
                                     </ul>
                                 </li>
-                                <li><a href="shop.html">Toute la Tunisie<i class="fa fa-angle-down"></i></a>
+                                <li><a href="{{pathFor 'listannonce'}}">Toute la Tunisie<i class="fa fa-angle-down"></i></a>
 
                                         <ul class="sup-menu">
                                             <div class="mega-menu">
@@ -214,7 +217,7 @@
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Jandouba"}}">Jandouba</a></li>
                                                 </div>
                                             <div class="single-mega-menu">
-                                           <li><a href="{{pathFor 'listannonce' gouvernorat="Kerwen"}}">Kerwen</a></li>
+                                           <li><a href="{{pathFor 'listannonce' gouvernorat="Kourwen"}}">Kourwen</a></li>
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Kasserine"}}">kasserine</a></li>
                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Gbeli"}}">Gbeli</a></li>
                                             <li><a href="{{pathFor 'listannonce' gouvernorat="Le Kef"}}">Le Kef</a></li>
@@ -244,12 +247,12 @@
 
                                 <li>
                                    <div>
-                                    <input type="text" placeholder="" value="Search product..." onblur="if (this.value == '') {this.value = 'Search product...';}" onfocus="if (this.value == 'Search product...') {this.value = '';}">
+                                    <input type="text" id="search" placeholder="" value="Search product..." onblur="if (this.value == '') {this.value = 'Search product...';}" onfocus="if (this.value == 'Search product...') {this.value = '';}">
 
                                </div>
 
                                 </li>
-                                <li>  <a href=" " class="btn btn-4 blue" background="#3399cc" id="Rechercher">Rechercher</a></li>
+                                <li>  <a href=" " class="btn btn-4 blue" background="#3399cc" id="rechercher">Rechercher</a></li>
 
 
                             </ul>

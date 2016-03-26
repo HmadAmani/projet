@@ -3,15 +3,18 @@ Template.index.events({
     Router.go('listeannonce');
     } ,
     'click #deposer': function (){
-     Router.go('/form');
+     Router.go('form');
     } ,
 
 
 
-    'click #recherche': function (){
+    'click #rechercher': function (){
         annonce.adresse = $('#adresse').val();
-        Meteor.call('rech', annonce);
-        Session.set('listannonce');
+       Router.go('listannonce');
     } ,
+    'click #search':function(){
+        titre.inventory.find( { tags: { $in: [ /^be/, /^st/ ] } } );
+
+    },
 
 });
