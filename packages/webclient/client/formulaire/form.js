@@ -87,7 +87,7 @@ Template.form.events({
                 annonce.cylindre = $('#cylindre').val();
                 annonce.condition = $('#condition').val();
                 break;
-            case'Camions indistrulles':
+            case'Autres véhicules indistrulles':
                 annonce.anneemodel = $('#anneemodel').val();
                 annonce.kilometrage = $('#kilometrage').val();
                 annonce.energie = $('#energie').val();
