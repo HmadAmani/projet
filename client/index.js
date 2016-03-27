@@ -13,8 +13,12 @@ Template.index.events({
        Router.go('listannonce');
     } ,
     'click #search':function(){
-        titre.inventory.find( { tags: { $in: [ /^be/, /^st/ ] } } );
+        Db.inventory.find( { tags: { $in: [ /^be/, /^st/ ] } } );
 
     },
 
+
+
 });
+
+

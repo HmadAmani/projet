@@ -6,6 +6,7 @@ Commentaire = new Mongo.Collection('commentaire');
 Appartement = new Mongo.Collection('appartement');
 Items = new Mongo.Collection('items');
 Uploads = new Mongo.Collection('uploads');
+Db=new Mongo.Collection('db');
 
 
 
