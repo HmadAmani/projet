@@ -2,6 +2,13 @@
 Meteor.publish('list', function(){
   return Annonce.find({});
 
+if(recherche=null){
+  return
+  else
+  return Annonce.find(({titre: titre}));
+
+}
+
 });
 
 Meteor.publish('annonce', function(id){

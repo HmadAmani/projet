@@ -9,16 +9,18 @@ Template.index.events({
 
 
     'click #rechercher': function (){
-        annonce.adresse = $('#adresse').val();
+        annonce.titre = $('#titre').val();
        Router.go('listannonce');
     } ,
-    'click #search':function(){
-        Db.inventory.find( { tags: { $in: [ /^be/, /^st/ ] } } );
 
-    },
 
 
 
 });
 
+Template.index.registerHelper({
+    recherche:function() {
+        return Annonce.find({tags:{$in: [/^a/,/^b/]}}).fetch();
+    }
+});
 
