@@ -4,14 +4,11 @@
 <Template name="profil">
     <div class="wrapper">
         <div class="container">
-
-
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
                     <li role="presentation" class="next">
                         <a href="#home" role="tab" id="home" data-toggle="tab" aria-controls="profile">
                             <span class="text">Profile</span>
-
 
                         </a>
 
@@ -19,18 +16,20 @@
                     </li>
 
                     <li role="presentation" class="active">
-                        <a href="#liste" id="list" role="tab" data-toggle="tab" aria-controls="Liste d'annonces" aria-expanded="true">
+                        <a href="#" id="list" role="tab" data-toggle="tab" aria-controls="Liste d'annonces" aria-expanded="true">
                             <span class="text">Liste d'annonces</span>
                         </a>
                     </li>
-                    <li>
-                        <div id="myTabContent" class="tab-content">
-                            <div>{{> UI.dynamic template=templateUser}}</div>
-                        </div>
-                    </li>
 
                 </ul>
+
+                <li>
+                    <div id="myTabContent" class="tab-content">
+                        <div>{{> UI.dynamic template=templateUser}}</div>
+                    </div>
+                </li>
             </div>
+
         </div>
     </div>
 
