@@ -7,9 +7,9 @@ Template.index.events({
     } ,
 
     'click #rechercher': function (){
-       annonce.titre = $('#titre').val();
-        var req = {tags:{$in: [/^UI._globalHelpers('recherche')(req)/]}};
-       Router.go('listannonce');
+      return annonce.titre = $('#titre').val();
+     //   var req = {tags:{$in: [/^UI._globalHelpers('recherche')(req)/]}};
+      // Router.go('listannonce');
     }
 
 

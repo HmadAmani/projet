@@ -33,6 +33,7 @@ Package.onUse(function(api) {
       'client/init.js',
       'client/profil/profil.html',
       'client/profil/profil.js',
+      'client/profil/profilUser.html',
 
 
 
