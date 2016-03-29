@@ -10,7 +10,7 @@ Template.profil.helpers({
 
 Template.profil.events({
     'click #home': function () {
-        Session.set('templateUser', 'profilUSER');
+        Session.set('templateUser');
     },
 
     'click #liste': function () {
