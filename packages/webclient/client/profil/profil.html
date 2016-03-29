@@ -1,0 +1,33 @@
+
+
+
+<Template name="profil">
+    <div class="wrapper">
+        <div class="container">
+
+
+            <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+                    <li role="presentation" class="next">
+                        <a href="#profile" role="tab" id="liste" data-toggle="tab" aria-controls="profile">
+                            <span class="text">Profile</span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="active">
+                        <a href="#home" id="home" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div>{{> UI.dynamic template=templateUser}}</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</Template>

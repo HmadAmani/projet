@@ -4,7 +4,7 @@
 if (Meteor.isClient) {
     Template.listannonce.helpers({
         list: function () {
-            return Annonce.find().fetch();
+            return Annonce.find(req).fetch();
             console.log(Annonce.find().fetch())
         }
     });

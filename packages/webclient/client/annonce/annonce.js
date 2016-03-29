@@ -23,7 +23,7 @@ Template.annonce.helpers({
 });
 
 if (Meteor.isClient){
-    Meteor.subscribe("listannonce");
+    Meteor.subscribe("listannonce" );
 
 };
 

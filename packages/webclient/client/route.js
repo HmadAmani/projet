@@ -49,3 +49,6 @@ Router.route('contact');
 Router.route('accueil');
 Router.route('form');
 Router.route('appartement');
+Router.route('profil');
+Router.route('profilUSER');
+

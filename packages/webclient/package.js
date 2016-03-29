@@ -30,7 +30,10 @@ Package.onUse(function(api) {
       'client/accueil/accueil.js',
       'client/formulaire/form.html',
       'client/formulaire/form.js',
-      'client/init.js'
+      'client/init.js',
+      'client/profil/profil.html',
+      'client/profil/profil.js',
+
 
 
 

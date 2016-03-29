@@ -26,6 +26,7 @@ Template.form.events({
         annonce.categorie= $('#categorie').val();
         annonce.gouvernorat = $('#gouvernorat').val();
         annonce.image = $('#imgupload-1').val();
+        annonce.date = new Date();
         var template = Session.get('template');
         switch(template) {
             case'Appartement':
