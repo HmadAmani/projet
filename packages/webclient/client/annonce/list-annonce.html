@@ -48,12 +48,24 @@
                     </div>
                     <!-- FILTER_PRICE START-->
                     <div class="filter-price">
-                        <h3 class="sidebar-title">Filter By Price</h3>
-                        <div id="slider"></div>
+
+
+                            <div data-role="main" class="ui-content">
+                                <form method="post" action="demoform.asp">
+
+
+                                    <div data-role="rangeslider">
+                                        <label for="price-min">Prix:</label>
+                                        <input type="range"  name="price-min" id="price-min" value="100" min="0" max="1000">
+                                        <label for="price-max">Prix:</label>
+                                        <input type="range"  name="price-max" id="price-max" value="1 000 000" min="0" max="1000">
+                                    </div>
+
+                                </form>
+                            </div>
+
                         <a href="#">Filter</a>
-                        <p>
-                            Price:<input type="text" id="amount" readonly="">
-                        </p>
+
                     </div>
                     <!-- FILTER_PRICE END-->
                     <!-- CATEGORY-SIDEBAR-END -->
@@ -101,6 +113,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8">
+                                        <a href="#" class="btn btn-4 blue" background="#3399cc" id="chat">Chat</a>
                                         <div class="product-info">
                                             <div class="price-box">
 			               	          <span class="special-price">
@@ -200,6 +213,10 @@
             </div>
         </div>
     </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <!-- FILTER_PRICE js -->
     <script src="js/jquery-ui.min.js"></script>

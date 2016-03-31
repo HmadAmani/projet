@@ -1,62 +1,56 @@
 /**
  * Created by Amani on 28/03/2016.
  */
-$("#slider-range").slider({
+
+function collision($div1, $div2) {
+    var x1 = $div1.offset().left;
+    var w1 = 40;
+    var r1 = x1 + w1;
+    var x2 = $div2.offset().left;
+    var w2 = 40;
+    var r2 = x2 + w2;
+
+    if (r1 < x2 || x1 > r2) return false;
+    return true;
+
+}
+
+// // slider call
+
+$('#slider').slider({
     range: true,
     min: 0,
-    max: 1440,
-    step: 15,
-    values: [540, 1020],
-    slide: function (e, ui) {
-        var hours1 = Math.floor(ui.values[0] / 60);
-        var minutes1 = ui.values[0] - (hours1 * 60);
+    max: 500,
+    values: [ 75, 300 ],
+    slide: function(event, ui) {
 
-        if (hours1.length == 1) hours1 = '0' + hours1;
-        if (minutes1.length == 1) minutes1 = '0' + minutes1;
-        if (minutes1 == 0) minutes1 = '00';
-        if (hours1 >= 12) {
-            if (hours1 == 12) {
-                hours1 = hours1;
-                minutes1 = minutes1 + " PM";
-            } else {
-                hours1 = hours1 - 12;
-                minutes1 = minutes1 + " PM";
-            }
+        $('.ui-slider-handle:eq(0) .price-range-min').html('$' + ui.values[ 0 ]);
+        $('.ui-slider-handle:eq(1) .price-range-max').html('$' + ui.values[ 1 ]);
+        $('.price-range-both').html('<i>$' + ui.values[ 0 ] + ' - </i>$' + ui.values[ 1 ] );
+
+        //
+
+        if ( ui.values[0] == ui.values[1] ) {
+            $('.price-range-both i').css('display', 'none');
         } else {
-            hours1 = hours1;
-            minutes1 = minutes1 + " AM";
-        }
-        if (hours1 == 0) {
-            hours1 = 12;
-            minutes1 = minutes1;
+            $('.price-range-both i').css('display', 'inline');
         }
 
+        //
 
-
-        $('.slider-time').html(hours1 + ':' + minutes1);
-
-        var hours2 = Math.floor(ui.values[1] / 60);
-        var minutes2 = ui.values[1] - (hours2 * 60);
-
-        if (hours2.length == 1) hours2 = '0' + hours2;
-        if (minutes2.length == 1) minutes2 = '0' + minutes2;
-        if (minutes2 == 0) minutes2 = '00';
-        if (hours2 >= 12) {
-            if (hours2 == 12) {
-                hours2 = hours2;
-                minutes2 = minutes2 + " PM";
-            } else if (hours2 == 24) {
-                hours2 = 11;
-                minutes2 = "59 PM";
-            } else {
-                hours2 = hours2 - 12;
-                minutes2 = minutes2 + " PM";
-            }
+        if (collision($('.price-range-min'), $('.price-range-max')) == true) {
+            $('.price-range-min, .price-range-max').css('opacity', '0');
+            $('.price-range-both').css('display', 'block');
         } else {
-            hours2 = hours2;
-            minutes2 = minutes2 + " AM";
+            $('.price-range-min, .price-range-max').css('opacity', '1');
+            $('.price-range-both').css('display', 'none');
         }
 
-        $('.slider-time2').html(hours2 + ':' + minutes2);
     }
 });
+
+$('.ui-slider-range').append('<span class="price-range-both value"><i>$' + $('#slider').slider('values', 0 ) + ' - </i>' + $('#slider').slider('values', 1 ) + '</span>');
+
+$('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">$' + $('#slider').slider('values', 0 ) + '</span>');
+
+$('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">$' + $('#slider').slider('values', 1 ) + '</span>');

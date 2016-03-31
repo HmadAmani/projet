@@ -44,9 +44,18 @@ api.addFiles('client/route.js');
 });
 
 
-Package.onTest(function(api) {
+/*Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
   api.use('webclient');
   //api.addFiles('webclient-tests.js');
 });
+Package.describe({
+    summary: "DB less realtime communication for meteor"
+});
+
+Package.on_use(function (api, where) {
+    api.use('underscore', ['client', 'server']);
+    api.add_files(['lib/ev.js', 'lib/server.js', 'lib/stream_permission.js'], 'server');
+    api.add_files(['lib/ev.js', 'lib/client.js'], 'client');
+});*/

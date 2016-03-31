@@ -16,10 +16,10 @@ Meteor.methods({
 
 });
 Template.annonce.helpers({
-    annonce: function(){
+    annonce: function () {
         console.log(Annonce.findOne());
         return Annonce.findOne();
-    }
+    },
 });
 
 if (Meteor.isClient){
