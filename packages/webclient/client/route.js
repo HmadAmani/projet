@@ -5,13 +5,14 @@
 Router.configure({
     layoutTemplate: 'index'
 });
-Router.route('annonce/:_id', function(){
-    return this.render('annonce', {
+Router.route('annonce/:_id' ,{
+        name: 'annonce',
+   // return this.render('annonce', {
         data: function () {
             return Annonce.findOne({_id: this.params._id});
         }
     });
-}, {name: 'annonce'});
+//},
 Router.route('/listannonce/:categorie?', {
     name: 'listannonce',
     waitOn: function () {

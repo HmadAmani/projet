@@ -16,9 +16,9 @@ Meteor.methods({
 
 });
 Template.annonce.helpers({
-    annonce: function () {
-        console.log(Annonce.findOne());
-        return Annonce.findOne();
+    annonce: function (id) {
+       // console.log(Annonce.find({_id:this._id.fetch()}));
+        return Annonce.find({_id:this._id.fetch()});
     },
 });
 

@@ -15,7 +15,9 @@ Template.profil.events({
     },
 
     'click #liste': function () {
-        // Session.set('', '');
+      //  annonce.user =Meteor.userId();
+       //  Session.set('templateUser','annonce');
+
     },
     'click #modifier': function activer() {
         document.form.nom.disabled=false;
