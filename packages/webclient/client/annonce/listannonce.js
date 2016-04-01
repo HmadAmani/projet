@@ -16,8 +16,8 @@ Template.listannonce.helpers({
         return Annonce.find({  $or:  [ {"categorie": $('#rechercher').val()},{"gouvernorat": $('#rechercher').val()}] }).fetch();
     },
 
-    'slide #price-min': function(event, ui){
-        startPos =$("#price-min").slider('getValue').val();
+   /* 'slide #price': function(event, ui){
+        startPos =$("#price").slider('getValue').val();
         $('.form-group').children('div').mouseup(function() {
 
 
@@ -25,7 +25,7 @@ Template.listannonce.helpers({
             Session.set("prix", str);
             Tracker.autorun(function () {
                 //  prix=Session.get("prix");
-                if (Session.get("prix") != null) {
+                if (Session.get("listeannonce") != null) {
                     var index = Session.get("prix").indexOf(",");
                     first = parseInt(Session.get("prix").substr(0, index));
                     last = parseInt(Session.get("prix").substr(index + 1));
@@ -34,8 +34,18 @@ Template.listannonce.helpers({
 
 
             });
-},
+},*/
 
 
 
 });
+Template.listannonce.rendered=function(){
+    if(! $('#price').data('uiSlide')){
+    $('#price').slider({
+        slide: function(event,ui){
+            alert(ui.value)
+        }
+    });
+}
+
+}
