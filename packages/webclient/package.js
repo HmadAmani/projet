@@ -34,6 +34,8 @@ Package.onUse(function(api) {
       'client/profil/profil.html',
       'client/profil/profil.js',
       'client/profil/profilUser.html',
+      'client/chat/chat.html',
+      'client/chat/chat.js',
 
 
 

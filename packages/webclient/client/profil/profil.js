@@ -15,7 +15,7 @@ Template.profil.events({
     },
 
     'click #liste': function () {
-      //  annonce.user =Meteor.userId();
+       annonce.user =Meteor.userId();
        //  Session.set('templateUser','annonce');
 
     },

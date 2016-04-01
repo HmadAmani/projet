@@ -52,4 +52,8 @@ Router.route('form');
 Router.route('appartement');
 Router.route('profil');
 Router.route('profilUSER');
+Router.route('chat');
+Router.route('welcome');
+Router.route('messages');
+Router.route('input');
 
