@@ -23,3 +23,7 @@ Meteor.publish('comments', function() {
 Meteor.publish('posts', function() {
   return Posts.find();
 });
+Meteor.publish('messages', function() {
+
+  return Messages.find();
+});
