@@ -17,7 +17,10 @@ Meteor.methods({
             console.log(Annonce);
 
       },
-
+    update : function(newProfile) {
+        if(this.userId)
+            Meteor.users.update(this.userId, {$set : { profile : newProfile }});
+    },
    /* 'envoimsg':function(msg){
         check(msg.text,String);
         console.log(Console);

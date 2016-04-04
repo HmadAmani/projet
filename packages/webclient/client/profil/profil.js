@@ -26,7 +26,10 @@ Template.profil.events({
         document.form.email.disabled=false;
         document.form.password.disabled=false;
         document.form.confirmpass.disabled=false;
-    }
+    },
+'click #enregistrer': function(){
+
+}
 });
 Meteor.profil.update({
     _id: newUsers
