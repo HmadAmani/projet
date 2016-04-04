@@ -17,6 +17,7 @@ Meteor.methods({
             console.log(Annonce);
 
       },
+
    /* 'envoimsg':function(msg){
         check(msg.text,String);
         console.log(Console);

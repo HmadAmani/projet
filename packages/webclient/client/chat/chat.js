@@ -4,7 +4,7 @@
 if (Meteor.isClient) {
     Template.messages.helpers({
         messages: function() {
-            return Messages.find({}, { sort: { time: -1}});
+            return Messages.find({userId: Meteor.userId()}, { sort: { time: -1}});
         }
     });
 
@@ -13,8 +13,7 @@ if (Meteor.isClient) {
             if (event.which == 13) { // 13 is the enter key event
                 if (Meteor.user())
                     var name = Meteor.user().profile.name;
-                else
-                    var name = 'Anonymous';
+
                 var message = document.getElementById('message');
                 if (message.value != '') {
                     Messages.insert({
@@ -29,4 +28,4 @@ if (Meteor.isClient) {
             }
         }
     }
-}
+};

@@ -28,3 +28,14 @@ Template.profil.events({
         document.form.confirmpass.disabled=false;
     }
 });
+Meteor.profil.update({
+    _id: newUsers
+}, {
+    $set: {
+        firstName: user.nom,
+        lastName: user.prenom,
+        adresse: user.adresse,
+        email: user.email,
+       // isAdmin: false
+    }
+});
