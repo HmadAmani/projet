@@ -9,6 +9,7 @@ Meteor.methods({
         check(an.categorie, String);
         check(an.gouvernorat, String);
         check(an.image,String);
+        check(an._id,Number);
         Annonce.insert(an);
         console.log(Annonce);
     },
@@ -17,7 +18,16 @@ Meteor.methods({
             console.log(Annonce);
 
       },
-    update : function(newProfile) {
+    'insert':function(){
+
+            userId:userId;
+            _id:_id;
+            name: name;
+            message: message.value;
+            time: Date.now();
+            Messages.insert();
+    },
+   /* update : function(newProfile) {
         if(this.userId)
             Meteor.users.update(this.userId, {$set : { profile : newProfile }});
     },
@@ -37,5 +47,11 @@ Meteor.methods({
 
         UploadServer.delete(upload.path);
         Uploads.remove(_id);
+    }
+});
+Houston.methods("Posts", {
+    "Publish": function (post) {
+        Posts.update(post._id, {$set: {published: true}});
+        return post.name + " published successfully.";
     }
 });

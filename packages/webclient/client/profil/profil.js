@@ -31,7 +31,7 @@ Template.profil.events({
 
 }
 });
-Meteor.profil.update({
+/*Meteor.profil.update({
     _id: newUsers
 }, {
     $set: {
@@ -41,4 +41,4 @@ Meteor.profil.update({
         email: user.email,
        // isAdmin: false
     }
-});
+});*/

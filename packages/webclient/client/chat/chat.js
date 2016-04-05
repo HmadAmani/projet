@@ -2,9 +2,10 @@
  * Created by Amani on 01/04/2016.
  */
 if (Meteor.isClient) {
+Meteor.subscribe('messages');
     Template.messages.helpers({
         messages: function() {
-            return Messages.find({userId: Meteor.userId()}, { sort: { time: -1}});
+            return Messages.find();
         }
     });
 
