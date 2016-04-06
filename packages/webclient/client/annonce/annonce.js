@@ -11,6 +11,7 @@ Meteor.methods({
         check(an.categorie,String);
         check(an.gouvernorat,String);
         check(an.image,String);
+        check(an.user_id,Number);
         Annonce.insert(an);
     },
 
