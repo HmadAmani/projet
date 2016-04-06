@@ -2,8 +2,8 @@
  * Created by Amani on 01/04/2016.
  */
 if (Meteor.isClient) {
-    session.get();
-Meteor.subscribe('messages',_Id);
+   // session.get("messages");
+Meteor.subscribe('messages');
     Template.messages.helpers({
         messages: function() {
             return Messages.find();
