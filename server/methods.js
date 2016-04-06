@@ -9,7 +9,7 @@ Meteor.methods({
         check(an.categorie, String);
         check(an.gouvernorat, String);
         check(an.image,String);
-        check(an._id,Number);
+       // check(an.userId,String);
         Annonce.insert(an);
         console.log(Annonce);
     },

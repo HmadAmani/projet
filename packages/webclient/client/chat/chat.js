@@ -2,7 +2,8 @@
  * Created by Amani on 01/04/2016.
  */
 if (Meteor.isClient) {
-Meteor.subscribe('messages');
+    session.get();
+Meteor.subscribe('messages',_Id);
     Template.messages.helpers({
         messages: function() {
             return Messages.find();
@@ -18,6 +19,7 @@ Meteor.subscribe('messages');
                 var message = document.getElementById('message');
                 if (message.value != '') {
                     Messages.insert({
+                        userId:Meteor.userId(),
                         name: name,
                         message: message.value,
                         time: Date.now(),

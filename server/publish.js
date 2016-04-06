@@ -23,9 +23,9 @@ Meteor.publish('comments', function() {
 Meteor.publish('posts', function() {
   return Posts.find();
 });
-Meteor.publish('messages', function() {
+Meteor.publish('messages', function(_id) {
 
-  return Messages.find({$or : [{from: this.userId, to:_id},{from:this._id, to:userId}]});
+  return Messages.find({$or : [{from: this.userId, to:_id},{to:this.userId, from:_id}]});
 });
 
 Meteor.publish("userStatus", function() {

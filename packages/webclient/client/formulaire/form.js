@@ -27,7 +27,7 @@ Template.form.events({
         annonce.gouvernorat = $('#gouvernorat').val();
         annonce.image = $('#imgupload-1').val();
         annonce.date = new Date();
-        annonce.user =Meteor.userId();
+        annonce.userId =Meteor.userId();
         var template = Session.get('template');
         switch(template) {
             case'Appartement':
