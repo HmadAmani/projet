@@ -10,7 +10,7 @@ Meteor.subscribe('messages');
     });
 
     Template.input.events = {
-        'keydown input#message' : function (event) {
+        'keydown input#message': function (event) {
             if (event.which == 13) { // 13 is the enter key event
                 if (Meteor.user())
                     var name = Meteor.user().profile.name;
@@ -18,6 +18,7 @@ Meteor.subscribe('messages');
                 var message = document.getElementById('message');
                 if (message.value != '') {
                     Messages.insert({
+
                         name: name,
                         message: message.value,
                         time: Date.now(),
@@ -29,4 +30,5 @@ Meteor.subscribe('messages');
             }
         }
     }
+
 };

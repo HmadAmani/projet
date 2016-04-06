@@ -18,15 +18,18 @@ Meteor.methods({
             console.log(Annonce);
 
       },
-    'insert':function(){
+   /*'ajouteMessage' : function (post) {
+        var timestamp = Math.round(new Date().getTime() / 1000);
+        Messages.insert({
+            _id : post._id,
+            message : post.message,
+            time : timestamp,
+        });
+    },*/
+   // Messages.insert();
 
-            userId:userId;
-            _id:_id;
-            name: name;
-            message: message.value;
-            time: Date.now();
-            Messages.insert();
-    },
+
+
    /* update : function(newProfile) {
         if(this.userId)
             Meteor.users.update(this.userId, {$set : { profile : newProfile }});
