@@ -4,7 +4,17 @@
 
 <h1>Chatapp</h1>
 {{> welcome }}
-{{> input }}
+    <div id="mf">
+
+        <fieldset>
+
+            <input type="text" id="message"  data_id="{{_id_chat}}" placeholder="Type your message…" autofocus>
+            <input type="hidden">
+
+        </fieldset>
+
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 {{> messages }}
 
 </template>
@@ -17,7 +27,7 @@
 <template name="messages">
     {{#each messages}}
 
-    <div id="live-chat">
+    <div id="live-chat" _id_chat="_id_chat">
 
         <header class="clearfix">
 
@@ -54,18 +64,4 @@
         </div>
         </div>
     {{/each}}
-</template>
-
-<template name="input">
-    <form action="#" method="post">
-
-        <fieldset>
-
-            <input type="text" id="message" placeholder="Type your message…" autofocus>
-            <input type="hidden">
-
-        </fieldset>
-
-    </form>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 </template>

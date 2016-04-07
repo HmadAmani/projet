@@ -52,7 +52,20 @@ Router.route('form');
 Router.route('appartement');
 Router.route('profil');
 Router.route('profilUSER');
-Router.route('chat');
+Router.route('chat', {
+    path: '/chat/:_id',
+    waitOn: function() {
+        return  Meteor.subscribe('messages', this.params._id);
+    },
+    data: function() {
+        return {
+            _id_chat: this.params._id
+        }
+    },
+    action: function () {
+        this.render('chat');
+    }
+});
 Router.route('welcome');
 Router.route('messages');
 Router.route('input');
