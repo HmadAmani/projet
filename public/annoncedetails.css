@@ -1,0 +1,70 @@
+html,body{
+    height: 100%;
+    background-color: lightgrey;
+    over-flow: hidden;
+}
+h1{
+    font-size:1.5em;
+    text-transform: uppercase;
+    margin: 8px;
+    padding: 0 24px;
+}
+
+#store{
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 100%;
+    overflow-y: auto;
+}
+#cart{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 60px;
+    overflow: hidden;
+}
+#cart>ul{
+    position: relative;
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+}
+#cart>ul>li{
+    background-color: white;
+    padding:8px;
+    margin: 1px 0 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+#cart>ul>li:not(.removing):hover:after{
+    position: absolute;
+    content: "x";
+    right: 0;
+    color: white;
+    background-color: #f44336;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    border-radius: 12px;
+    margin-right: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px 0px;
+}
+
+
+#pay{
+    position: absolute;
+    display: block;
+    height: 60px;
+    line-height:60px;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card-title{
+    text-shadow: 0 0 24px black;
+}
