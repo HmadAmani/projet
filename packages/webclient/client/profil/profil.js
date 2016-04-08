@@ -16,7 +16,8 @@ Template.profil.events({
 
     'click #list': function () {
        annonce.user =Meteor.userId();
-       // console.log((Session.get('')));
+        return Annonce.find().fetch();
+        console.log(Annonce.find().fetch())
        //  Session.set('templateUser','annonce');
 
     },
