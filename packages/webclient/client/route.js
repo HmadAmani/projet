@@ -5,8 +5,8 @@
 Router.configure({
     layoutTemplate: 'index'
 });
-Router.route('annonce/:_id' ,{
-        name: 'annonce',
+Router.route('/annonce/:_id' ,{
+        name: "annonce",
    // return this.render('annonce', {
         data: function () {
             return Annonce.findOne({_id: this.params._id});
@@ -52,7 +52,19 @@ Router.route('form');
 Router.route('appartement');
 Router.route('profil');
 Router.route('profilUSER');
-Router.route('annoncedetails');
+
+Router.route('/annoncedetails/:_id', {
+
+    name: "annoncedetails",
+
+    data: function(){
+        annonce.user =Meteor.userId();
+
+        return Annonce.findOne({_id: this.params._id});
+
+    }
+
+});
 
 Router.route('chat', {
     path: '/chat/:_id',

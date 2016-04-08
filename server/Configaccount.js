@@ -15,3 +15,8 @@ Accounts.onLogin(function() {
     }
     return true;
 });
+/*Accounts.onLogin(function(user){
+ var routeName = Router.current().route.getName();
+ if(routeName=='form') { Router.go('/profile');
+ }
+ });*/

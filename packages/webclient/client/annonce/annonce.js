@@ -2,7 +2,7 @@
  * Created by Amani on 06/03/2016.
  */
 
-/*Meteor.methods({
+Meteor.methods({
     create: function(an){
         check(an.titre, String);
         check(an.adresse, String);
@@ -15,7 +15,7 @@
         Annonce.insert(an);
     },
 
-});*/
+});
 Template.annonce.helpers({
     annonce: function (id) {
        // console.log(Annonce.find({_id:this._id.fetch()}));
