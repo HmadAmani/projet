@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="cat-area-heading">
-                    <h4><strong>D</strong>énieres annonces</h4>
+                    <h4><strong></strong>Dernières annonces</h4>
                 </div>
                 {{#each data}}
 
@@ -25,10 +25,11 @@
 
 
                                 <div class="price-box">
+                                    {{prix}} D
                                 </div>
-                                {{description}}  <a href="{{pathFor 'details' id=_id}}">
-                                Détails
-                            </a>
+                                {{description}}
+
+
                             </div>
                         </div>
                     </div>    {{/each}}
