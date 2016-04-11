@@ -1,24 +1,40 @@
 <template name="annoncedetails">
-{{#each data}}
-<div id="store">
 
-    <section data-food="burger" class="row">
-        <article class="col s12 m6 l4" data-price="5">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://farm6.staticflickr.com/5545/9702624462_2efb4ab1d1_d.jpg" title="Flickr picture by Nic Taylor Photography">
-                    <span class="card-title">{{prix}}</span>
+    <section class="category-area-two control-car mar-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="cat-area-heading">
+                    <h4><strong>D</strong>énieres annonces</h4>
                 </div>
-                <div class="card-content">
-                    <h3>{{titre}}</h3>
-                    <p>
-                        {{description}}
-                    </p>
-                </div>
-            </div>
-        </article>
+                {{#each data}}
+
+                    <div class="col-md-12" style="width: 350px;">
+                        <div class="single-product">
+
+                            <div class="product-image">
+                                <div class="show-img">
+                                    <h1>{{titre }}</h1>
+                                    <a href="#"><img src="img/product/product-details/full/1.jpg" alt=""></a>
+                                </div>
+
+                            </div>
+                            <div class="count-down">
+
+                            </div>
+                            <div class="prod-info">
+
+
+                                <div class="price-box">
+                                </div>
+                                {{description}}  <a href="{{pathFor 'details' id=_id}}">
+                                Détails
+                            </a>
+                            </div>
+                        </div>
+                    </div>    {{/each}}
+
+
+            </div></div>
     </section>
 
-</div>
-{{/each}}
 </template>

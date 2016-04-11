@@ -27,10 +27,10 @@ Meteor.publish('messages', function(_id) {
 
   return Messages.find({$or : [{from: this.userId, to:_id},{to:this.userId, from:_id}]});
 });
-/*Meteor.publish('annoncedetails', function(_id) {
+Meteor.publish('data', function() {
 
-  return Annonce.find(this.userId);
-});*/
+  return Annonce.find();
+});
 
 
 Meteor.publish("userStatus", function() {

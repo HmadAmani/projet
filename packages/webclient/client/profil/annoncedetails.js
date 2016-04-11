@@ -1,10 +1,14 @@
 /**
  * Created by Amani on 08/04/2016.
  */
-Template.annoncedetails.helpers({
+if (Meteor.isClient) {
 
-    Details: function(id){
-        return Session.get('Details');
+    Meteor.subscribe("data");
+    Template.annoncedetails.helpers({
 
-    }
-});
+        data: function () {
+            return Annonce.find({userId: Meteor.userId()}).fetch();
+
+        }
+    });
+}
