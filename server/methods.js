@@ -18,25 +18,12 @@ Meteor.methods({
             console.log(Annonce);
 
       },
-   /*'ajouteMessage' : function (post) {
-        var timestamp = Math.round(new Date().getTime() / 1000);
-        Messages.insert({
-            _id : post._id,
-            message : post.message,
-            time : timestamp,
-        });
-    },*/
-   // Messages.insert();
 
 
 
    /* update : function(newProfile) {
         if(this.userId)
             Meteor.users.update(this.userId, {$set : { profile : newProfile }});
-    },
-   /* 'envoimsg':function(msg){
-        check(msg.text,String);
-        console.log(Console);
     },*/
 
 

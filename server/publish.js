@@ -31,6 +31,8 @@ Meteor.publish('messages', function(_id) {
 
   return Annonce.find(this.userId);
 });*/
+
+
 Meteor.publish("userStatus", function() {
   return Meteor.users.find({ "status.online": true }, { fields: { } });
 });
