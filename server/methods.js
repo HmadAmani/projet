@@ -45,3 +45,21 @@ Houston.methods("Posts", {
         return post.name + " published successfully.";
     }
 });
+Meteor.methods({
+
+    createCom: function (com) {
+        var name = Meteor.user().profile.name;
+
+        check(com.contenu, String);
+        check(com.idannonce, String);
+        check(com.iduser, String);
+
+        Commentaire.insert(com);
+
+        // notifications(com);
+
+
+    },
+
+
+});

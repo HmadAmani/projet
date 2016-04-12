@@ -20,8 +20,8 @@ Meteor.publish('uploads', function() {
 Meteor.publish('items', function() {
   return Items.find();
 });
-Meteor.publish('comments', function() {
-  return Comments.find();
+Meteor.publish('list_commentaire', function(){
+  return Commentaire.find();
 });
 Meteor.publish('posts', function() {
   return Posts.find();

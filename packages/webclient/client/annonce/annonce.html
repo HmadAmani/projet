@@ -64,8 +64,23 @@
                                     <a href="#">{{adresse}}</a>
                                 </span>
                             </div>
+                            <br>Les com :::::<br>
+                            <table >
+                                {{#each list_commentaire}}
+                                    <tr><td>photo  <br></td><td> <a href="#" style="color:#ff7572;">{{name}} <br> </a></td><td>{{contenu }}</td></tr>
+                                    <TR>
+                                        <td></td><td> {{date}}</td>
+                                    </TR>
+                                {{/each}}
+                            </table>
+                            <br>FIN com :::::<br>
+                            <div class="form-group">
+                                <div class="form-left" align="left">
+                                    <input type="text" class="form-control" placeholder=" Votre Commentaire" name="commentaire" id="commentaire" required>
+                                </div>
 
-
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="ajouterCommentaire"><a href="#" class="btn btn-primary">Ajouter Commentaire</a></button>
                             <div class="share-buttons"> </div>
                         </div>
                     </div>

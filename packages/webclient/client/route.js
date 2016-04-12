@@ -53,6 +53,7 @@ Router.route('appartement');
 Router.route('profil');
 Router.route('profilUSER');
 Router.route('list');
+Router.route('commentaire');
 
 
 Router.route('/annoncedetails/:_id', {
