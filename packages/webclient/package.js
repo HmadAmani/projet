@@ -21,6 +21,7 @@ Package.onUse(function(api) {
       'client/annonce/listannonce.js',
       'client/annonce/annonce.html',
       'client/annonce/annonce.js',
+      'client/annonce/annoncegouvernorat.html',
       'client/formulaire/formulaire.html',
       'client/formulaire/formulaire.js',
       'client/compte/compte.html',

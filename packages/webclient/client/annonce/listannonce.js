@@ -3,18 +3,19 @@
  */
 if (Meteor.isClient) {
     Meteor.subscribe("listeannonce");
-
+    Meteor.subscribe("list");
+    Meteor.subscribe("ville");
     Template.listannonce.helpers({
-        list: function () {
+        listannonce: function () {
             return Annonce.find().fetch();
-            console.log(Annonce.find().fetch())
+            console.log(Annonce.find().fetch());
         }
     });
 
 
 }
-Template.listannonce.helpers({
-    listannonce: function () {
+Template.list.helpers({
+    list: function () {
         return Annonce.find({  $or:  [ {"categorie": $('#search').val()},{"gouvernorat": $('#search').val()}] }).fetch();
     },
 

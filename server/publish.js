@@ -9,6 +9,9 @@ Meteor.publish('annonce', function(id){
 Meteor.publish('listcat', function(categorie){
   return Annonce.find({categorie: categorie});
 });
+Meteor.publish('ville', function(gouvernorat){
+  return Annonce.find({gouvernorat: gouvernorat});
+});
 
 Meteor.publish('uploads', function() {
   return Uploads.find();

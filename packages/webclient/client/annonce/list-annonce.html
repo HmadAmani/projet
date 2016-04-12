@@ -221,3 +221,226 @@
     <!-- FILTER_PRICE js -->
     <script src="js/jquery-ui.min.js"></script>
 </template>
+<template name="list">
+    <div class="shop-content-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <!-- CATEGORY-SIDEBAR-START -->
+                    <div class="category-sidebar">
+                        <h1 class="sidebar-title" style="color:#0040FF;">Category</h1>
+                        <ul>
+
+                            <li>
+                                <h1>Immobilier</h1>
+                            <li><a href="{{pathFor 'listannonce' categorie="appartement"}}">Appartement</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="maison"}}">Maison</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="bureaux et plateaux"}}">Bureaux et plateaux</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="magazins et commerces"}}">Magazins et commerces</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="Terrains"}}">Terrains</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Immobilier de vacances"}}">Immobilier de vacances</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Collocation"}}">Collocation</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Autre Immobilier"}}">Autre Immobilier</a></li>
+
+                            </li>
+                            <h1>Véhicules</h1>
+                            <li> <a href="{{pathFor 'listannonce' categorie="voiture"}}"> Voiture</a> </li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="moto"}}"> Motos</a> </li>
+                            <li>  <a href="{{pathFor 'listannonce' categorie="Autres véhicules industrielles"}}">Autres véhicules industrielles</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Tracteurs et véhicules agricoles"}}">Tracteurs et véhicules agrigoles</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="fourgonettes"}}">Fourgonettes</a></li>
+                            <li>  <a href="{{pathFor 'listannonce' categorie="Pièces de rechange et accessoires"}}">Pièces de rechange et accessoires</a></li>
+
+                            <h1>Multimédia</h1>
+                            <li><a href="{{pathFor 'listannonce' categorie="téléphonie"}}">Téléphonie</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="image et son"}}">Images et son</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="informatique et accessoires"}}">Informatique et accessoires</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="jeux vidéos"}}">Jeux vidéos </a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="gadget"}}">Gadget </a></li>
+
+
+
+                            <h1>Emploi, affaires et services</h1>
+                            <li><a href="{{pathFor 'listannonce' categorie="offre d'enmploi"}}">Offre d'emploi</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="demande d'emploi"}}">Demande d'emploi</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="services"}}">Services</a></li>
+
+
+
+                        </ul>
+                    </div>
+                    <!-- FILTER_PRICE START-->
+                    <div class="filter-price">
+
+
+                        <div data-role="main" class="ui-content">
+                            <form method="post" action="demoform.asp">
+
+
+                                <div data-role="rangeslider" id="price">
+                                    <label for="price-min">Prix:</label>
+                                    <input type="range"  name="price-min" id="price-min" value="100" min="0" max="1000">
+                                    <label for="price-max">Prix:</label>
+                                    <input type="range"  name="price-max" id="price-max" value="1 000 000" min="0" max="1000">
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <a href="#">Filter</a>
+
+                    </div>
+                    <!-- FILTER_PRICE END-->
+                    <!-- CATEGORY-SIDEBAR-END -->
+
+
+
+                    <!-- FEATURED-PRODUCT-AREA END-->
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <!-- ALL-PRODUCT-AREA START-->
+                    <div class="all-product-area">
+                        <!-- ALL-PRODUCT-TOP-ROW START-->
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <!-- TOOLBAR START-->
+                                <div class="toolbar">
+                                    <div class="view-mode">
+                                        <a href="shop-grid-category.html">
+                                            <i class="fa fa-th-large"></i>
+                                        </a>
+                                        <a href="shop-list-category.html" class="active">
+                                            <i class="fa fa-th-list"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- TOOLBAR END-->
+                        </div>
+                    </div>
+                    <!-- ALL-PRODUCT-TOP-ROW END-->
+
+
+                    <ul>
+                        {{#each list}}
+                            <div class="row">
+                                <!-- SINGLE-PRODUCT START-->
+                                <div class="single-product">
+                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img src="img/product/7.jpg" alt="Special" class="primary-image"/>
+                                                <img src="img/product/8.jpg" alt="Special" class="secondary-image"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8">
+                                        <a href="{{pathFor 'chat' _id=userId}}" class="btn btn-4 blue" background="#3399cc" id="chat">Chat</a>
+                                        <div class="product-info">
+                                            <div class="price-box">
+			               	          <span class="special-price">
+                                         {{ prix }} D
+                                       </span>
+                                            </div>
+                                            <h2 class="product-name">
+
+                                                <a href="{{pathFor 'annonce' id=_id}}">
+                                                    {{titre}}
+                                                </a>
+                                            </h2>
+                                            <div class="product-desc">
+                                                <p>{{description}}</p>
+                                            </div>
+                                            <div class="product-meta">
+                                <span>
+                                    Categories:
+                                    <a href="#">{{categorie}}</a>
+                                </span>
+                                <span>
+                                    Gouvernorat:
+                                    <a href="#">{{gouvernorat}}</a>
+                                </span>
+                                  <span>
+                                    Adresse:
+                                    <a href="#">{{adresse}}</a>
+                                </span>
+                                            </div>
+
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Vendeur</button>
+
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                            <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <label for="recipient-name" class="control-label">Nom:</label>
+                                                                    <input type="text" class="form-control" id="nom">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="recipient-name" class="control-label">Email:</label>
+                                                                    <input type="text" class="form-control" id="email">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="recipient-name" class="control-label">Numéro:</label>
+                                                                    <input type="text" class="form-control" id="numero">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="message-text" class="control-label">Message:</label>
+                                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                                            <button type="button" class="btn btn-primary">Envoyer message</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        {{/each}}
+                    </ul>
+
+
+
+                    <!-- PAGINATION-START -->
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-12 col-md-12">
+                            <div class="paginations">
+                                <ul>
+                                    <li>
+                                        <a class="current" href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a class="next-arrow" href="#">→</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- PAGINATION-START -->
+                    </div>
+                </div>
+                <!-- ALL-PRODUCT-AREA END-->
+            </div>
+        </div>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- FILTER_PRICE js -->
+    <script src="js/jquery-ui.min.js"></script>
+</template>
