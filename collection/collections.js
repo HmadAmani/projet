@@ -8,7 +8,7 @@ Items = new Mongo.Collection('items');
 Uploads = new Mongo.Collection('uploads');
 Db=new Mongo.Collection('db');
 Messages = new Mongo.Collection('messages');
-
+Notifications = new Mongo.Collection('notifications');
 
 
 Uploads.allow({

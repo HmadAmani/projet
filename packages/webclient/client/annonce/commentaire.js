@@ -14,8 +14,14 @@ Template.annonce.events({
         Meteor.call('createCom', commentaire);
 
 
-
-
+        notifications = {};
+        notifications.url = Router.current().url;
+        notifications.titre = "a commenté une annonce";
+        notifications.vu = 0;
+        notifications.utilisateur =Meteor.userId();
+        notifications.name = Meteor.user().profile.name;
+        notifications.date = new Date();
+        Meteor.call('createnotification', notifications);
 
 
     }
@@ -33,3 +39,17 @@ if (Meteor.isClient) {
         }
     });
 }
+Template.affichagenotification.helpers({
+    list_notification: function () {
+        // var an=Annonce.find( {_id: this._id} );
+
+        return Notifications.find({$and: [ {utilisateur:Meteor.userId()},{ vu:0 } ] } ).count();
+    }
+});
+
+Template.affichagedetnotification.helpers({
+    list_det_notification: function () {
+
+        return Notifications.find({$and: [ {utilisateur:Meteor.userId()},{ vu:0 } ] } );
+    }
+});

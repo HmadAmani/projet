@@ -34,7 +34,9 @@ Meteor.publish('data', function() {
 
   return Annonce.find();
 });
-
+Meteor.publish('list_notification', function(){
+  return Notifications.find( );
+});
 
 Meteor.publish("userStatus", function() {
   return Meteor.users.find({ "status.online": true }, { fields: { } });

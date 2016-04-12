@@ -9,3 +9,18 @@
     <br>FIN com :::::<br>
 
 </template>
+<template name="affichagenotification">
+
+
+    {{list_notification}}
+</template>
+
+<template name="affichagedetnotification">
+    {{#each list_det_notification}}
+        <li><a href="{{ url}}" style="text-decoration: none;" name="liennotif">{{ name}} &nbsp;{{ titre}}</a></li>
+
+    {{/each}}
+
+
+
+</template>

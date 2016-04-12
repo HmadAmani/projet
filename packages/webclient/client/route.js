@@ -13,7 +13,7 @@ Router.route('/annonce/:_id' ,{
         }
     });
 //},
-Router.route('/listannonce/:categorie?', {
+Router.route('/listannonce/categorie/:categorie?', {
     name: 'listannonce',
     waitOn: function () {
         // return one handle, a function, or an array
@@ -86,4 +86,6 @@ Router.route('chat', {
 Router.route('welcome');
 Router.route('messages');
 Router.route('input');
+Router.route('affichagenotification');
+Router.route('affichagedetnotification');
 

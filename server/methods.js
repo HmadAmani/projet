@@ -19,14 +19,6 @@ Meteor.methods({
 
       },
 
-
-
-   /* update : function(newProfile) {
-        if(this.userId)
-            Meteor.users.update(this.userId, {$set : { profile : newProfile }});
-    },*/
-
-
     'deleteFile': function(_id) {
         check(_id, String);
 
@@ -61,5 +53,13 @@ Meteor.methods({
 
     },
 
+    createnotification: function (not) {
+        check(not.url, String);
+        check(not.titre, String);
+        // check(not.vu,0);
+        check(not.utilisateur, String);
+        //  check(not.date, String);
 
+        Notifications.insert(not);
+    },
 });
