@@ -1,0 +1,149 @@
+<template name="formModif">
+
+    <style>.panel {
+        width: 300px;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        background-color:#F1F1F1;
+        border:1px solid transparent;
+        -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.05);
+        box-shadow:0 1px 1px rgba(0,0,0,0.05);
+        border-radius:2px;
+    }
+
+    .panel-heading {
+        border-bottom:1px solid transparent;
+        border-top-right-radius:3px;
+        border-top-left-radius:3px;
+        border-radius:2px 2px 0 0;
+        padding:10px 15px;
+        text-align:center;
+    }
+    </style>
+
+
+    <!-- ************************ Page Content ************************ -->
+    <section class="gray">
+        <article class="container">
+
+            <!-- ************************ Form Area Start ************************ -->
+
+            <div class="start-project">
+                <div class="title">
+                    <ul>
+                        <li data-link="basic-data" class="current"><a href="#"><i class="fa fa-pagelines"></i><span> Information Basique</span></a></li>
+                        <li data-link="image-vidoe" class=""><a href="#"><i class="fa fa-file-image-o"></i><span>Ajouter Images ou Video</span></a></li>
+                        <li data-link="creer-compte" class=""><a href="#"><i class="fa fa-user"></i><span>Créer Compte</span></a></li>
+
+                    </ul>
+                </div>
+                <hr>
+                <div class="start-content">
+
+                    <div id="basic-data" class="form-wizard active">
+
+                        <div class="form-group">
+                            <div class="form-left">
+                                <input type="text" value="" id="titre" class="form-control" placeholder=" Titre" name="title">
+
+
+                            </div>
+                            <div class="form-right">
+                                <input type="text" value="" id="prix" class="form-control" placeholder="Prix" name="money">
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-left">
+                                <input type="text" value="" id="adresse" class="form-control" placeholder="Adresse" name="adresse">
+                            </div>
+                            <div class="form-right">
+                                <input type="text" value="" class="form-control" placeholder="Numéro" name="num">
+                                <input id="num" name="numero" value="" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
+
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="form-group">
+                                <div class="form-left">
+                                    <select class="form-control arrow-down" id="gouvernorat" name="Gouvernorat">
+                                        <option value="">Selectionner Gouvernorat</option>
+                                        <option value="Tunis">Tunis</option>
+                                        <option value="Ariana">Ariana</option>
+                                        <option value="Béja">Béja</option>
+                                        <option value="Ben Arous">Ben Arous</option>
+                                        <option value="Bizerte">Bizerte</option>
+                                        <option value="Gabès">Gabès</option>
+                                        <option value="Gafsa">Gafsa</option>
+                                        <option value="Jandouba">Jandouba</option>
+                                        <option value="Kourwen">Kourwen</option>
+                                        <option value="Kasserine">Kasserine</option>
+                                        <option value="Gbeli">Gbeli</option>
+                                        <option value="Le Kef">Le Kef</option>
+                                        <option value="Mahdia">Mahdia</option>
+                                        <option value="Manouba">Manouba</option>
+                                        <option value="Mednine">Mednine</option>
+                                        <option value="Monastir">Monastir</option>
+                                        <option value="Nabeul">Nabeul</option>
+                                        <option value="Sfax">Sfax</option>
+                                        <option value="Sidi Bouzid">Sidi Bouzid</option>
+                                        <option value="Selyana">Selyana</option>
+                                        <option value="Sousse">Sousse</option>
+                                        <option value="Tataouine">Tataouine</option>
+                                        <option value="Tozeur">Tozeur</option>
+                                        <option value="Zaghouan">Zaghouan</option>
+                                    </select>
+                                    <div class="clear"></div>
+                                </div>
+
+                                <div class="form-right">
+
+                                    <select class="form-control arrow-down" id="categorie" name="categorie">
+                                        <option value="">Selectionner  Categorie</option>
+                                        <option value="Immobilier">--Immobilier--</option>
+                                        <option value="appartement">Appartement</option>
+                                        <option value="maison">Maison</option>
+                                        <option value="bureaux et plateaux">Bureaux et Plateaux</option>
+                                        <option value="magazins et commerces">Magazins et commerces</option>
+                                        <option value="Terrains">Terrains</option>
+                                        <option value="Collocation">Collocation</option>
+                                        <option value="Immobilier de vacances">Immobilier de vacances</option>
+                                        <option value="Autre Immobilier">Autre Immobilier</option>
+                                        <option value="">--Véhicule--</option>
+                                        <option value="voiture">Voiture</option>
+                                        <option value="moto">Moto</option>
+                                        <option value="fourgonettes">Fourgonettes</option>
+                                        <option value="Tracteurs et véhicules agricoles">Tracteurs et véhicules agricoles</option>
+                                        <option value="Pièces de rechange et accessoires">Pièces de rechange et accessoires</option>
+                                        <option value="Autres véhicules">Autres véhicules industrielles</option>
+                                        <option value="">--Emploi, affaires et services--</option>
+                                        <option value="offre d'emploi">Offre d'emploi</option>
+                                        <option value="demande d'emploi">Demande d'emploi</option>
+                                        <option value="services">Services</option>
+                                        <option value="">--Multimédia--</option>
+                                        <option value="téléphonie">Téléphonie</option>
+                                        <option value="informatique et accessoires">Informatique et accessoires</option>
+                                        <option value="image et Son">Image et Son</option>
+                                        <option value="jeux vidéos">Jeux vidéos</option>
+                                        <option value="gadget">Gadget</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="description" id ="desc" class="form-control" placeholder="Description"></textarea>
+
+                            </div>
+                            <div class="clear"></div>
+
+                        </div>
+
+
+
+                        <div>{{> UI.dynamic template=template}}</div>

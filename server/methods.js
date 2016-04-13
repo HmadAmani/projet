@@ -18,7 +18,21 @@ Meteor.methods({
             console.log(Annonce);
 
       },
-
+    update: function(_id, an) {
+        check(an.titre, String);
+        check(an.description, String);
+        check(an.prix, Number);
+        Annonce.update(_id, {
+            $set: {
+                titre: an.titre,
+                description: an.description,
+                prix: an.prix,
+                adresse: an.adresse,
+                categorie: an.categorie,
+              gouvernorat: an.gouvernorat,
+            }
+        })
+    },
     'deleteFile': function(_id) {
         check(_id, String);
 

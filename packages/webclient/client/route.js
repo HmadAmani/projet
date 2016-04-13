@@ -19,7 +19,7 @@ Router.route('/listannonce/:categorie?', {
         // return one handle, a function, or an array
         if(this.params.categorie)
             return Meteor.subscribe('listcat', this.params.categorie);
-        return Meteor.subscribe('list');
+        return Meteor.subscribe('listannonce');
 
     },
 
@@ -27,6 +27,20 @@ Router.route('/listannonce/:categorie?', {
         this.render('listannonce');
     }
 });
+/*Router.route('/list/:gouvernorat?', {
+    name: 'list',
+    waitOn: function () {
+        // return one handle, a function, or an array
+        if(this.params.gouvernorat)
+            return Meteor.subscribe('ville', this.params.gouvernorat);
+        return Meteor.subscribe('list');
+
+    },
+
+    action: function () {
+        this.render('list');
+    }
+});*/
 
 Router.map(function () {
     this.route('home', {

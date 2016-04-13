@@ -4,7 +4,7 @@
 if (Meteor.isClient) {
     Meteor.subscribe("listeannonce");
     Meteor.subscribe("list");
-    Meteor.subscribe("ville");
+   // Meteor.subscribe("ville");
     Template.listannonce.helpers({
         listannonce: function () {
             return Annonce.find().fetch();
