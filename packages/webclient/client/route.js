@@ -13,7 +13,7 @@ Router.route('/annonce/:_id' ,{
         }
     });
 //},
-Router.route('/listannonce/categorie/:categorie?', {
+Router.route('/listannonce/:categorie?', {
     name: 'listannonce',
     waitOn: function () {
         // return one handle, a function, or an array
