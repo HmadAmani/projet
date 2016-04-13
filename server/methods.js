@@ -33,6 +33,14 @@ Meteor.methods({
             }
         })
     },
+
+    delete:function(_id,an){
+
+    },
+
+
+
+
     'deleteFile': function(_id) {
         check(_id, String);
 

@@ -12,3 +12,14 @@ if (Meteor.isClient) {
         }
     });
 }
+Template.annoncedetails.events({
+    'click #modif': function () {
+
+
+    },
+    'click #supp':function(event){
+event.target.getAttribute(annonce._id);
+        if (confirm('Are you sure?')) {
+            Meteor.call('delete', this._id);
+        }    }
+});
