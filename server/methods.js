@@ -34,7 +34,8 @@ Meteor.methods({
         })
     },
 
-    delete:function(_id,an){
+    delete:function(){
+     //   Annonce.remove();
 
     },
 
