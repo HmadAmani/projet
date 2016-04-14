@@ -102,4 +102,9 @@ Router.route('messages');
 Router.route('input');
 Router.route('affichagenotification');
 Router.route('affichagedetnotification');
-Router.route('formModif');
+Router.route('formModif',{
+    path: 'formModif/:_id',
+    waitOn: function(){
+        return Meteor.subscribe('annonce',_id);
+    }
+});

@@ -18,9 +18,10 @@ Template.annoncedetails.events({
       Router.go('/formModif');
 
     },
+
     'click #supp':function(event){
-event.target.getAttribute(annonce._id);
+event.target.getAttribute("annonceid");
         if (confirm('Are you sure?')) {
-            Meteor.call('delete', this._id);
+            Meteor.call('deleteAnnonce', this._id);
         }    }
 });

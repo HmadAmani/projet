@@ -34,10 +34,6 @@ Meteor.methods({
         })
     },
 
-    delete:function(){
-     //   Annonce.remove();
-
-    },
 
 
 
@@ -86,3 +82,21 @@ Meteor.methods({
         Notifications.insert(not);
     },
 });
+
+if (Meteor.isServer) {
+
+    Meteor.startup(function() {
+
+        return Meteor.methods({
+
+            deleteAnnonce: function(_id) {
+
+                return Annonce.remove(_id);
+
+            }
+
+        });
+
+    });
+
+}
