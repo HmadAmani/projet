@@ -1,3 +1,46 @@
+<head>
+
+
+
+    <!-- ************************ CSS Files ************************ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- Basic Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../../../../public/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <!-- Progressbar CSS -->
+    <link rel="stylesheet" href="assets/js/pieprogress/css/rainbow.css">
+    <link rel="stylesheet" href="assets/js/pieprogress/css/progress.css">
+
+    <!-- Revolution Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slider-revolution/rs-plugin/css/settings.css" media="screen" />
+
+    <!-- Carousels CSS -->
+    <link href="assets/js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- Google Fonts & Font-Awesome -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/icons.css">
+
+    <!-- Your Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/my-styles.html">
+
+    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+
+
+
 <template name="formModif">
 
     <style>.panel {
@@ -35,7 +78,6 @@
                     <ul>
                         <li data-link="basic-data" class="current"><a href="#"><i class="fa fa-pagelines"></i><span> Information Basique</span></a></li>
                         <li data-link="image-vidoe" class=""><a href="#"><i class="fa fa-file-image-o"></i><span>Ajouter Images ou Video</span></a></li>
-                        <li data-link="creer-compte" class=""><a href="#"><i class="fa fa-user"></i><span>Créer Compte</span></a></li>
 
                     </ul>
                 </div>
@@ -144,6 +186,100 @@
 
                         </div>
 
-
-
                         <div>{{> UI.dynamic template=template}}</div>
+
+                        <div class="next-btn">
+
+                            <button type="button" class="btn btn-4 blue" data-link="image-vidoe" onClick="moveform(this,'image-vidoe')">Suivant</button>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+             <span>
+			<i class="fonticon-attention fonticon-size-large fonticon-vertical-fix"></i>
+
+		    </span>
+
+                    <div id="image-vidoe" class="form-wizard">
+                        <div class="form-group">
+                            {{> upload_bootstrap }}
+                        </div>
+
+                        <div id="video-inputs" class="imgORvid">
+                            <div class="form-group">
+
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                        <div id="imgupload-1" class="imgORvid">
+                            <div class="form-group">
+                                {{> upload_bootstrap }}
+                                <div id="add-image-field-cnt"><input type="hidden" value="1" id="imgupload-1" name="imgNumber" ></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                        <div class="next-btn">
+                            <button type="button" class="btn btn-5 blue" data-link="basic-data" onClick="moveform(this,'basic-data')">Retour</button>
+                            <button type="button" class="btn btn-4 blue" data-link="video-inputs" onClick="moveform(this,'video-inputs')">Sauvgarder</button>
+
+                        </div>
+                    </div>
+
+
+
+                    <i class="fa fa-exclamation-triangle"> Les annonces sont validées selon les règlements de notre site.</i>
+                </div>
+            </div>
+        </article>
+
+
+
+    </section>
+
+
+
+
+    <!-- ************************ jQuery Scripts ************************ -->
+
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/migrate.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Progressbar -->
+    <script type="text/javascript" src="assets/js/pieprogress/scripts/rainbow.min.js"></script>
+    <script type="text/javascript" src="assets/js/pieprogress/scripts/jquery-asPieProgress.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="assets/js/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Carousels js -->
+    <script type="text/javascript" src="assets/js/bxslider/jquery.bxslider.min.js"></script>
+
+    <!-- Google Maps -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;v=3.exp"></script>
+    <script type="text/javascript" src="assets/js/maps/scripts/jquery.gmap.min.js"></script>
+
+    <!--Custom Scroll Bar -->
+    <script type="text/javascript" src="assets/js/jquery.scroll.js"></script>
+
+    <!-- Grayscale Images -->
+    <script type="text/javascript" src="assets/js/jquery.hoverizr.min.js"></script>
+
+    <!-- Custom Settings -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <!-- Jquery Plugins - (For Selectbox, EventCountDown) -->
+    <script type="text/javascript" src="assets/js/plugin.js"></script>
+
+    <!-- Event Countdown -->
+    <script type="text/javascript" src="assets/js/countdown.js"></script>
+
+    <!-- Retina Script -->
+    <script type="text/javascript" src="assets/js/retina.min.js"></script>
+
+</template>

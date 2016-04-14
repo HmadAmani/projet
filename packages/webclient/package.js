@@ -25,6 +25,8 @@ Package.onUse(function(api) {
       'client/annonce/commentaire.js',
       'client/formulaire/formulaire.html',
       'client/formulaire/formulaire.js',
+      'client/formulaire/formModif.html',
+      'client/formulaire/formModif.js',
       'client/compte/compte.html',
       'client/compte/compte.js',
       'client/contact/contact.html',
