@@ -20,15 +20,22 @@ Template.profil.events({
 
 
     },
-    'click #modifier': function activer() {
+   'click #modifier': function activer() {
         document.form.nom.disabled=false;
         document.form.prenom.disabled=false;
-        document.form.adresse.disabled=false;
         document.form.email.disabled=false;
         document.form.password.disabled=false;
         document.form.confirmpass.disabled=false;
     },
 'click #enregistrer': function(){
+    var User = {};
+    var userId = user.findOne().userId();
+    User.nom = $('#nom').val();
+    User.prenom = $('#prenom').val();
+    User.email = $('#email').val();
+    User.password = $('#password').val();
+    User.confirmpass = ($('#confirmpass').val());
+    Meteor.call('updateprofil', Meteor.userId());
 
 }
 });

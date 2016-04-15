@@ -64,10 +64,11 @@ Router.route('contact');
 Router.route('accueil');
 Router.route('form');
 Router.route('appartement');
-Router.route('profil');
-Router.route('profilUSER');
 Router.route('list');
 Router.route('commentaire');
+Router.route('profil');
+Router.route('profilUSER');
+
 
 
 Router.route('/annoncedetails/:_id', {
@@ -102,9 +103,10 @@ Router.route('messages');
 Router.route('input');
 Router.route('affichagenotification');
 Router.route('affichagedetnotification');
+
 Router.route('formModif',{
-    path: 'formModif/:_id',
+    path: '/formModif/:_id',
     waitOn: function(){
-        return Meteor.subscribe('annonce',_id);
+        return Meteor.subscribe('annonce',this.params._id);
     }
 });

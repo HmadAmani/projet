@@ -22,6 +22,7 @@ Meteor.methods({
         check(an.titre, String);
         check(an.description, String);
         check(an.prix, Number);
+
         Annonce.update(_id, {
             $set: {
                 titre: an.titre,
@@ -30,6 +31,23 @@ Meteor.methods({
                 adresse: an.adresse,
                 categorie: an.categorie,
               gouvernorat: an.gouvernorat,
+            }
+        })
+    },
+    updateprofil: function(userId, User) {
+        check(User.nom, String);
+        check(User.prenom, String);
+        check(User.email,String);
+        check(User.password,String);
+        check(User.confirmpass,String);
+
+       user.updateprofil(userId, {
+            $set: {
+                nom: User.nom,
+                prenom: User.prenom,
+                email: User.email,
+                password: User.password,
+                confirmpass: User.confirmpass,
             }
         })
     },

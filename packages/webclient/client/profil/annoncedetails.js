@@ -15,7 +15,7 @@ if (Meteor.isClient) {
 Template.annoncedetails.events({
     'click #modif': function () {
 
-      Router.go('/formModif');
+      //Router.go('/formModif');
 
     },
 

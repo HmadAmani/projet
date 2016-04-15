@@ -5,7 +5,14 @@ Template.formModif.helpers({
 
     template : function(){
         return Session.get('template');
-    }
+    },
+    an: function(){
+        return Annonce.findOne();
+    },
+    filesToUpload: function() {
+        return Uploader.info.get();
+    },
+
 
 
 });
