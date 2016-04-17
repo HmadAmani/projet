@@ -67,7 +67,13 @@ Router.route('appartement');
 Router.route('list');
 Router.route('commentaire');
 Router.route('profil');
-Router.route('profilUSER');
+
+Router.route('profilUSER',{
+    path: '/profilUSER/:_id',
+        waitOn: function(){
+        return Meteor.subscribe('user',this.params.userId);
+    }
+});
 
 
 
