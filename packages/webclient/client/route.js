@@ -69,9 +69,9 @@ Router.route('commentaire');
 Router.route('profil');
 
 Router.route('profilUSER',{
-    path: '/profilUSER/:_id',
-        waitOn: function(){
-        return Meteor.subscribe('user',this.params.userId);
+    path: '/profilUSER',
+        data: function(){
+        return Meteor.users.findOne(this._id);
     }
 });
 
@@ -112,7 +112,7 @@ Router.route('affichagedetnotification');
 
 Router.route('formModif',{
     path: '/formModif/:_id',
-    waitOn: function(){
-        return Meteor.subscribe('annonce',this.params._id);
+    data: function(){
+        return Annonce.findOne(this.params._id);
     }
 });
