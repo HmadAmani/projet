@@ -3,9 +3,12 @@
  */
 Template.profil.helpers({
 
-    templateUser: function(){
+    templateUser: function () {
         return Session.get('templateUser');
-    }
+    },
+    current: function () {
+    Meteor.users.find(Meteor.userId());
+}
 });
 
 Template.profil.events({
