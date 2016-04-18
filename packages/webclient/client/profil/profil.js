@@ -36,7 +36,7 @@ Template.profil.events({
     User.password = $('#password').val();
     User.confirmpass = ($('#confirmpass').val());
     Meteor.call('updateprofil', Meteor.userId());
-    Router.go('/profil');
+    //Router.go('/profil');
 
 
 }
