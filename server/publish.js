@@ -35,7 +35,7 @@ Meteor.publish('data', function() {
   return Annonce.find();
 });
 Meteor.publish('list_notification', function(){
-  return Notifications.find();
+  return Notifications.find({userId: this.userId, read:false});
 });
 
 Meteor.publish("userStatus", function() {

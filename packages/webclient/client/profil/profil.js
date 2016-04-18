@@ -36,17 +36,9 @@ Template.profil.events({
     User.password = $('#password').val();
     User.confirmpass = ($('#confirmpass').val());
     Meteor.call('updateprofil', Meteor.userId());
+    Router.go('/profil');
+
 
 }
 });
-/*Meteor.profil.update({
-    _id: newUsers
-}, {
-    $set: {
-        firstName: user.nom,
-        lastName: user.prenom,
-        adresse: user.adresse,
-        email: user.email,
-       // isAdmin: false
-    }
-});*/
+
