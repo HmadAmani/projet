@@ -93,7 +93,7 @@
 
                             </div>
                             <div class="form-right">
-                                <input type="text" value="" id="prix" class="form-control" placeholder="Prix" name="money">
+                                <input type="text" value="{{prix}}" id="prix" class="form-control" placeholder="Prix" name="money">
                             </div>
                             <div class="clear"></div>
 
@@ -101,11 +101,11 @@
 
                         <div class="form-group">
                             <div class="form-left">
-                                <input type="text" value="" id="adresse" class="form-control" placeholder="Adresse" name="adresse">
+                                <input type="text" value="{{adresse}}" id="adresse" class="form-control" placeholder="Adresse" name="adresse">
                             </div>
                             <div class="form-right">
                                 <input type="text" value="" class="form-control" placeholder="Numéro" name="num">
-                                <input id="num" name="numero" value="" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
+                                <input id="num" name="numero" value="{{numero}}" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
 
                             </div>
 
@@ -113,7 +113,7 @@
 
                             <div class="form-group">
                                 <div class="form-left">
-                                    <select class="form-control arrow-down" id="gouvernorat" name="Gouvernorat">
+                                    <select class="form-control arrow-down" id="gouvernorat" value="{{gouvernorat}}" name="Gouvernorat">
                                         <option value="">Selectionner Gouvernorat</option>
                                         <option value="Tunis">Tunis</option>
                                         <option value="Ariana">Ariana</option>
@@ -145,7 +145,7 @@
 
                                 <div class="form-right">
 
-                                    <select class="form-control arrow-down" id="categorie" name="categorie">
+                                    <select class="form-control arrow-down" id="categorie" value="{{categorie}}" name="categorie">
                                         <option value="">Selectionner  Categorie</option>
                                         <option value="Immobilier">--Immobilier--</option>
                                         <option value="appartement">Appartement</option>
@@ -179,7 +179,7 @@
                             </div>
 
                             <div class="form-group">
-                                <textarea name="description" id ="desc" class="form-control" placeholder="Description"></textarea>
+                                <textarea name="description" id ="desc" value="{{description}}" class="form-control" placeholder="Description"></textarea>
 
                             </div>
                             <div class="clear"></div>
