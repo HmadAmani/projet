@@ -89,7 +89,7 @@
 
                         <div class="form-group">
                             <div class="form-left">
-                                <input type="text" value="" id="titre" class="form-control" placeholder=" Titre" name="title">
+                                <input type="text" value="" id="titre" class="form-control" placeholder=" Titre" name="title" data-toggle="popover" title="Titre de l'annonce" data-content="Le titre ne doit pas contenir les termes comme A vendre,A ne pa rater, Bonne affaire ou Demande " data-placement="top">
 
 
                             </div>
@@ -183,6 +183,7 @@
                                     <textarea name="description" id ="desc" class="form-control" placeholder="Description"></textarea>
 
                             </div>
+
                             <div class="clear"></div>
 
                         </div>
@@ -254,7 +255,9 @@
 
     </section>
 
-
+    <script>
+    $('#titre').popover();
+    </script>
 
 
 <!-- ************************ jQuery Scripts ************************ -->

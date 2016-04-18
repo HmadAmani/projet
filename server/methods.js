@@ -37,20 +37,20 @@ Meteor.methods({
             }
         })
     },
-    updateprofil: function(userId, User) {
-        check(User.nom, String);
-        check(User.prenom, String);
-        check(User.email,String);
-        check(User.password,String);
-        check(User.confirmpass,String);
+    updateprofil: function(userId, user) {
+        check(user.Nom, String);
+        check(user.Prénom, String);
+        check(user.emails,String);
+       // check(User.password,String);
+       // check(User.confirmpass,String);
 
-       user.updateprofil(userId, {
+       users.updateprofil(userId, {
             $set: {
-                nom: User.nom,
-                prenom: User.prenom,
-                email: User.email,
-                password: User.password,
-                confirmpass: User.confirmpass,
+                Nom: user.Nom,
+                Prénom: user.Prénom,
+                emails: user.emails,
+               // password: User.password,
+                //confirmpass: User.confirmpass,
             }
         })
     },

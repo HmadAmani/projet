@@ -28,15 +28,15 @@ Template.profil.events({
         document.form.confirmpass.disabled=false;
     },
 'click #enregistrer': function(){
-    var User = {};
-    var userId = user.findOne().userId();
-    User.nom = $('#nom').val();
-    User.prenom = $('#prenom').val();
-    User.email = $('#email').val();
-    User.password = $('#password').val();
-    User.confirmpass = ($('#confirmpass').val());
-    Meteor.call('updateprofil', Meteor.userId());
-    //Router.go('/profil');
+    var user = {};
+    var userId = users.findOne().userId();
+    user.Nom = $('#Nom').val();
+    user.Prénom = $('#Prénom').val();
+    user.emails = $('#emails').val();
+    user.password = $('#password').val();
+    user.confirmpass = ($('#confirmpass').val());
+    Meteor.call('updateprofil', userId,user);
+   Router.go('/profil');
 
 
 }
