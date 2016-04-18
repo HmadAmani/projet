@@ -23,6 +23,7 @@ Template.formModif.events({
         an.titre = $('#titre').val();
         an.description = $('#desc').val();
         an.prix = Number($('#prix').val());
+        an.numero = Number($('#numero').val());
         an.categorie = ($('#categorie').val());
         an.gouvernorat = ($('#gouvernorat').val());
         Meteor.call('update', _id, an);

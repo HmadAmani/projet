@@ -26,6 +26,7 @@ Template.form.events({
             annonce.adresse = $('#adresse').val();
             annonce.description = $('#desc').val();
             annonce.prix = Number($('#prix').val());
+            annonce.numero = Number($('#numero').val());
             annonce.categorie = $('#categorie').val();
             annonce.gouvernorat = $('#gouvernorat').val();
             annonce.image = $('#imgupload-1').val();

@@ -8,6 +8,7 @@ Meteor.methods({
         check(an.adresse, String);
         check(an.description, String);
         check(an.prix, Number);
+        check(an.numero, Number);
         check(an.categorie,String);
         check(an.gouvernorat,String);
         check(an.image,String);

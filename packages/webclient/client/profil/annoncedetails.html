@@ -27,9 +27,26 @@
                                 <div class="price-box">
                                     {{prix}} D
                                 </div>
+
+                                <div class="product-meta">
+                                <span>
+                                    Categories:
+                                    <a href="#">{{categorie}}</a>
+                                </span>
+                                <span>
+                                    Gouvernorat:
+                                    <a href="#">{{gouvernorat}}</a>
+                                </span>
+                                  <span>
+                                    Adresse:
+                                    <a href="#">{{adresse}}</a>
+                                </span>
+                                     <span>
+                                    Numéro:
+                                    <a href="#">{{numero}}</a>
+                                </span>
+                                </div>
                                 {{description}}
-
-
                             </div>
 
                             <a href="{{pathFor 'formModif' id= _id}}" class="btn btn-4 blue" background="#3399cc" id="modif">Modifier</a>

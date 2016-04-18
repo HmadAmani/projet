@@ -104,8 +104,8 @@
                                 <input type="text" value="{{adresse}}" id="adresse" class="form-control" placeholder="Adresse" name="adresse">
                             </div>
                             <div class="form-right">
-                                <input type="text" value="" class="form-control" placeholder="Numéro" name="num">
-                                <input id="num" name="numero" value="{{numero}}" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
+                                <input type="text" value="{{numero}}" class="form-control" placeholder="Numéro" name="numero">
+                                <input id="num" name="numero" value="" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
 
                             </div>
 
@@ -145,7 +145,7 @@
 
                                 <div class="form-right">
 
-                                    <select class="form-control arrow-down" id="categorie" value="{{categorie}}" name="categorie">
+                                    <select class="form-control arrow-down" id="categorie" value="{{categorie}}" name="categorie" selected >
                                         <option value="">Selectionner  Categorie</option>
                                         <option value="Immobilier">--Immobilier--</option>
                                         <option value="appartement">Appartement</option>
