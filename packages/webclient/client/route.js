@@ -66,12 +66,10 @@ Router.route('form');
 Router.route('appartement');
 Router.route('list');
 Router.route('commentaire');
-Router.route('profil');
-
-Router.route('profilUSER',{
-    path: '/profilUSER',
-        data: function(){
-        return Meteor.users.findOne(this._id);
+Router.route('profil',{
+    path: '/profil',
+    data: function(){
+        return { cur: Meteor.users.findOne(Meteor.userId) };
     }
 });
 

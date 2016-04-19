@@ -44,7 +44,7 @@ Meteor.methods({
        // check(User.password,String);
        // check(User.confirmpass,String);
 
-       users.updateprofil(userId, {
+       Meteor.users.update(userId, {
             $set: {
                 Nom: user.Nom,
                 Prénom: user.Prénom,

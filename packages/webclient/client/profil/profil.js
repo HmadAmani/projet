@@ -38,8 +38,8 @@ Template.profil.events({
     user.emails = $('#emails').val();
     user.password = $('#password').val();
     user.confirmpass = ($('#confirmpass').val());
-    Meteor.users.updateprofil({_id: Meteor.userId()}, {$set: {"profile.Nom" :" ","profile.Prénom": " "}});
-   // Meteor.call('updateprofil', userId,user);
+  //  Meteor.users.updateprofil({_id: Meteor.userId()}, {$set: {"profile.Nom" :" ","profile.Prénom": " "}});
+    Meteor.call('updateprofil', userId,user);
    Router.go('/profil');
 
 
