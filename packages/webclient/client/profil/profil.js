@@ -32,14 +32,23 @@ Template.profil.events({
     },
 'click #enregistrer': function(){
     var user = {};
-    var userId = users.findOne().userId();
-    user.Nom = $('#Nom').val();
-    user.Prénom = $('#Prénom').val();
-    user.emails = $('#emails').val();
+   Nom = $('#nom').val();
+    Prénom = $('#prenom').val();
+    emails = $('#emails').val();
     user.password = $('#password').val();
     user.confirmpass = ($('#confirmpass').val());
-  //  Meteor.users.updateprofil({_id: Meteor.userId()}, {$set: {"profile.Nom" :" ","profile.Prénom": " "}});
-    Meteor.call('updateprofil', userId,user);
+/*
+    if (confirm('Are you sure?')) {
+        Meteor.call('update', Meteor.userId(),user);
+    }*/
+    Meteor.users.update(Meteor.userId(), {
+        $set: {
+            "profile.Nom": Nom,
+            "profile.Prénom": Prénom,
+           //  "emails.0.address": emails,
+        }
+    })
+  // Meteor.call('update', userId,user);
    Router.go('/profil');
 
 
