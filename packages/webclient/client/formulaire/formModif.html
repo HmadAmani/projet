@@ -88,12 +88,12 @@
 
                         <div class="form-group">
                             <div class="form-left">
-                                <input type="text" value="{{titre}}" id="titre" class="form-control" placeholder=" Titre" name="title">
+                                <input type="text" value="{{titre}}" id="titre" class="form-control" placeholder=" Titre" name="title" data-toggle="popover" title="Titre de l'annonce" data-content="Le titre ne doit pas contenir les termes comme A vendre,A ne pa rater, Bonne affaire ou Demande " data-placement="top">
 
 
                             </div>
                             <div class="form-right">
-                                <input type="text" value="{{prix}}" id="prix" class="form-control" placeholder="Prix" name="money">
+                                <input type="text" value="{{prix}}" id="prix" class="form-control" placeholder="Prix" name="money" data-toggle="popover" title="Prix" data-content="Le prix est en dinart " data-placement="top">
                             </div>
                             <div class="clear"></div>
 
@@ -104,7 +104,7 @@
                                 <input type="text" value="{{adresse}}" id="adresse" class="form-control" placeholder="Adresse" name="adresse">
                             </div>
                             <div class="form-right">
-                                <input type="text" value="{{numero}}" class="form-control" placeholder="Numéro" name="numero">
+                                <input type="text" value="{{numero}}" class="form-control" placeholder="Numéro" name="numero" data-toggle="popover" title="Numéro" data-content="Le numéro ne dépasse pas 11 chiffres " data-placement="top">
                                 <input id="num" name="numero" value="" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
 
                             </div>
@@ -238,7 +238,11 @@
     </section>
 
 
-
+    <script>
+        $('#titre').popover();
+        $('#prix').popover();
+        $('#description').popover();
+    </script>
 
     <!-- ************************ jQuery Scripts ************************ -->
 

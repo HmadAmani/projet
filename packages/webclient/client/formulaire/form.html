@@ -94,7 +94,7 @@
 
                             </div>
                             <div class="form-right">
-                                <input type="text" value="" id="prix" class="form-control" placeholder="Prix" name="money">
+                                <input type="text" value="" id="prix" class="form-control" placeholder="Prix" name="money" title="Prix" data-content="Le prix est en dinart " data-placement="top">
                             </div>
                             <div class="clear"></div>
 
@@ -105,7 +105,7 @@
                                 <input type="text" value="" id="adresse" class="form-control" placeholder="Adresse" name="adresse">
                             </div>
                             <div class="form-right">
-                                <input type="text" value="" class="form-control" placeholder="Numéro" id="numero" name="num">
+                                <input type="text" value="" class="form-control" placeholder="Numéro" id="numero" name="num" data-toggle="popover" title="Numéro" data-content="Le numéro ne dépasse pas 11 chiffres " data-placement="top">
                                 <input id="num" name="numero" value="" type="checkbox" >Masquer le numéro de téléphone dans l'annonce
 
                             </div>
@@ -257,6 +257,8 @@
 
     <script>
     $('#titre').popover();
+    $('#prix').popover();
+    $('#numero').popover();
     </script>
 
 
