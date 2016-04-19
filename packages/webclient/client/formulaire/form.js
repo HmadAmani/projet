@@ -13,8 +13,17 @@ Template.form.helpers({
     },
     template : function(){
         return Session.get('template');
-    }
+    },
+    myCallbackss: function() {
+        return {
 
+            formData: function () {
+                return {
+                    createurId: Session.get('utilisateurCourant'),
+                    categorie: 'media'
+                }
+            }
+        }},
 
 });
 
