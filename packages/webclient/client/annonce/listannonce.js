@@ -9,7 +9,12 @@ if (Meteor.isClient) {
         listannonce: function () {
             return Annonce.find().fetch();
             console.log(Annonce.find().fetch());
+        },
+        list:function(){
+            return Annonce.find();
         }
+
+
     });
 
 
@@ -58,8 +63,8 @@ Template.listannonce.rendered=function(){
 
 
 
-        'click #okok':function(){
-console.log("ggggggggggg",this._id);
+        'click .compare-button':function(){
+       console.log("ggggggggggg",this._id);
         }
     })
 }
