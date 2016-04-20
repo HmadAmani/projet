@@ -17,6 +17,12 @@ Template.profil.events({
         console.log(Session.get('templateUser'))
     },
 
+    'click #listsauvg': function () {
+        Session.set('templateUser','annoncedetails');
+        console.log(Session.get('templateUser'))
+
+
+    },
     'click #list': function () {
         Session.set('templateUser','annoncedetails');
         console.log(Session.get('templateUser'))

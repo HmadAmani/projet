@@ -54,6 +54,12 @@ Template.listannonce.rendered=function(){
     Template.listannonce.events({
         'click #chat': function(){
             Router.go('chat');
+        },
+
+
+
+        'click #btnsauvg':function(){
+
         }
     })
 }
