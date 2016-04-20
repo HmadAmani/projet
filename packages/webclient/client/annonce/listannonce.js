@@ -6,13 +6,10 @@ if (Meteor.isClient) {
     Meteor.subscribe("list");
    // Meteor.subscribe("ville");
     Template.listannonce.helpers({
-        listannonce: function () {
+        /*listannonce: function () {
             return Annonce.find().fetch();
             console.log(Annonce.find().fetch());
-        },
-        list:function(){
-            return Annonce.find();
-        }
+        }*/
 
 
     });

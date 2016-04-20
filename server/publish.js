@@ -1,13 +1,13 @@
 
-Meteor.publish('list', function(){
-  return Annonce.find({});
+Meteor.publish('list', function(categorie){
+  if(categorie)
+    return Annonce.find({categorie: categorie});
+  else
+     return Annonce.find({});
 });
 
 Meteor.publish('annonce', function(id){
   return Annonce.find({_id: id});
-});
-Meteor.publish('listcat', function(categorie){
-  return Annonce.find({categorie: categorie});
 });
 Meteor.publish('ville', function(gouvernorat){
   return Annonce.find({gouvernorat: gouvernorat});

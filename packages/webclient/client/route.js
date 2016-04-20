@@ -15,32 +15,53 @@ Router.route('/annonce/:_id' ,{
 //},
 Router.route('/listannonce/:categorie?', {
     name: 'listannonce',
-    waitOn: function () {
-        // return one handle, a function, or an array
-        if(this.params.categorie)
-            return Meteor.subscribe('listcat', this.params.categorie);
-        return Meteor.subscribe('listannonce');
+    /*waitOn: function () {
+        return Meteor.subscribe('list', this.params.categorie);
 
+    },*/
+    data: function () {
+        var listannonce =  {};
+        if(this.params.categorie)
+            listannonce =  Annonce.find({categorie: this.params.categorie}).fetch();
+        else
+            listannonce =  Annonce.find({}).fetch();
+        return {
+            listannonce: listannonce
+        }
     },
 
     action: function () {
         this.render('listannonce');
     }
 });
-/*Router.route('/list/:gouvernorat?', {
-    name: 'list',
-    waitOn: function () {
-        // return one handle, a function, or an array
-        if(this.params.gouvernorat)
-            return Meteor.subscribe('ville', this.params.gouvernorat);
-        return Meteor.subscribe('list');
 
+
+Router.route('/listannonce/:gouvernorat?', {
+    name: 'listannonce',
+    /*waitOn: function () {
+     return Meteor.subscribe('list', this.params.categorie);
+
+     },*/
+    data: function () {
+        var listannonce =  {};
+        if(this.params.categorie)
+            listannonce =  Annonce.find({gouvernorat: this.params.gouvernorat}).fetch();
+        else
+            listannonce =  Annonce.find({}).fetch();
+        return {
+            listannonce: listannonce
+        }
     },
 
     action: function () {
-        this.render('list');
+        this.render('listannonce');
     }
-});*/
+});
+
+
+
+
+
 
 Router.map(function () {
     this.route('home', {
