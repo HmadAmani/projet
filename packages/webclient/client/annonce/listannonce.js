@@ -58,8 +58,8 @@ Template.listannonce.rendered=function(){
 
 
 
-        'click #btnsauvg':function(){
-
+        'click #okok':function(){
+console.log("ggggggggggg",this._id);
         }
     })
 }
