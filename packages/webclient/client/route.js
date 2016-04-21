@@ -36,15 +36,15 @@ Router.route('/listannonce/:categorie?', {
 });
 
 
-Router.route('/listannonce/:gouvernorat?', {
+/*Router.route('/listannonce/:gouvernorat?', {
     name: 'listannonce',
     /*waitOn: function () {
      return Meteor.subscribe('list', this.params.categorie);
 
-     },*/
+     },
     data: function () {
         var listannonce =  {};
-        if(this.params.categorie)
+        if(this.params.gouvernorat)
             listannonce =  Annonce.find({gouvernorat: this.params.gouvernorat}).fetch();
         else
             listannonce =  Annonce.find({}).fetch();
@@ -56,7 +56,7 @@ Router.route('/listannonce/:gouvernorat?', {
     action: function () {
         this.render('listannonce');
     }
-});
+});*/
 
 
 

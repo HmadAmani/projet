@@ -5,7 +5,10 @@ Meteor.publish('list', function(categorie){
   else
      return Annonce.find({});
 });
+/*Meteor.publish('listannonce', function(gouvernorat) {
 
+  return Annonce.find({gouvernorat: gouvernorat});
+});*/
 Meteor.publish('annonce', function(id){
   return Annonce.find({_id: id});
 });
