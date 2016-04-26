@@ -41,7 +41,7 @@ Template.form.events({
             annonce.image = $('#imgupload-1').val();
             annonce.date = new Date();
             annonce.userId = Meteor.userId();
-            annonce.url =Session.get('img');
+            annonce.url =Session.get('image');
             var template = Session.get('template');
             switch (template) {
                 case'Appartement':
