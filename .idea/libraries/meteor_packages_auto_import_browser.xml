@@ -14,10 +14,13 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-facebook/1.0.6/web.browser/facebook.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/rate-limit/1.0.0/web.browser/rate-limit.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_rate_limit.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_jquery-ui/1.11.4/web.browser/packages/mizzao_jquery-ui/jquery-ui.css" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/lib/collections.coffee" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/lib/shared.coffee" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/lib/menu.coffee" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_jquery-ui/1.11.4/web.browser/packages/mizzao_jquery-ui.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/custom_template_view.coffee" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_build-fetcher/0.2.0/web.browser/packages/mizzao_build-fetcher.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/admin_change_password.coffee" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/document_view.coffee" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/collection_view.coffee" />
@@ -256,10 +259,13 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-facebook/1.0.6/web.browser/facebook.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/rate-limit/1.0.0/web.browser/rate-limit.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-base/1.2.2/web.browser/accounts_rate_limit.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_jquery-ui/1.11.4/web.browser/packages/mizzao_jquery-ui/jquery-ui.css" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/lib/collections.coffee" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/lib/shared.coffee" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/lib/menu.coffee" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_jquery-ui/1.11.4/web.browser/packages/mizzao_jquery-ui.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/custom_template_view.coffee" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/mizzao_build-fetcher/0.2.0/web.browser/packages/mizzao_build-fetcher.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/admin_change_password.coffee" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/document_view.coffee" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/houston_admin/2.0.7/web.browser/client/collection_view.coffee" />

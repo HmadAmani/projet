@@ -6976,3 +6976,18 @@ h3.faq-title {
 .ui-slider a:focus {
     outline: none;
 }
+
+
+
+
+
+
+
+
+.action-buttons .action-btn {
+    width: 213px;
+    display: inline-block;
+    height: 44px;
+    overflow: hidden;
+    margin-left: 9px;
+}

@@ -2,15 +2,6 @@
  * Created by Amani on 15/03/2016.
  */
 Meteor.startup(function() {
-    Uploader.finished = function(index, file) {
-
-            Uploads.insert(file);
-        Uploads.iduser = Meteor.userId();
-        Session.set('image',file.url);
-        },
-
-
-
      //   Session.setDefault('compteur', 0);
     // Session.setDefault('compteurM', Session.get("compteurM"));
 
@@ -19,6 +10,8 @@ Meteor.startup(function() {
         // if(Session.get('compteur')<3){
         Uploads.insert(file);
         //Uploads.find({})
+        Session.set('image',file);
+        console.log(file.url);
         Session.set('compteur', Session.get('compteur') + 1);
         Session.set('compteurM',Session.get('compteurM')+1);
 
