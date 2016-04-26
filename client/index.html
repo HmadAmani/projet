@@ -149,7 +149,10 @@
                     <nav>
                         <ul>
 
-                            <li><a href="index.html">Toutes les catégories<i class="fa fa-angle-down"></i></a>
+                            <li><a href="{{pathFor 'accueil'}}" id="deposer"> Accueil </a>
+                            </li>
+
+                            <li><a href="index.html">Toutes catégories<i class="fa fa-angle-down"></i></a>
                                 <ul class="sup-menu">
 
                                     <div class="mega-menu">
@@ -239,7 +242,8 @@
                                 </ul>
 
                             </li>
-
+                            <li><a href="{{pathFor 'form'}}" id="deposer"> Déposer annonce </a>
+                            </li>
 
                             <li><a href="" style="text-decoration: none;"><span class="bubble">{{>affichagenotification}}</span>Notifications </a>
                                 <ul class="sub-menu">
@@ -248,8 +252,7 @@
                                 </ul>
 
                             </li>
-                            <li><a href="{{pathFor 'form'}}" id="deposer">Déposer annonce<i class="fa fa-angle-down"></i></a>
-                                </li>
+
 
                         </ul>
                     </nav>
@@ -276,14 +279,13 @@
                                 <div>
                                     <input type="text" id="search" placeholder="Que cherchez-vous?" onblur="if (this.value == '') {this.value = 'Que cherchez-vous?';}" onfocus="if (this.value == 'Search product...') {this.value = '';}">
                                     <button type="submit">
-                                        <i class="fa fa-search"></i>
+                                        <a href="{{pathFor 'list'}}"  id="rechercher"> <i class="fa fa-search"></i></a>
                                     </button>
                                 </div>
                             </form>
                         </div>
                         <div class="cart-total">
                             <ul>
-                                <li>  <a href="{{pathFor 'list'}}" class="btn btn-4 blue" background="#3399cc" id="rechercher">Rechercher</a></li>
 
                             </ul>
                         </div>

@@ -36,29 +36,26 @@ Router.route('/listannonce/:categorie?', {
 });
 
 
-/*Router.route('/listannonce/:gouvernorat?', {
-    name: 'listannonce',
-    /*waitOn: function () {
-     return Meteor.subscribe('list', this.params.categorie);
+/*Router.route('/list/:gouvernorat?', {
+    name: 'list',
 
-     },
     data: function () {
-        var listannonce =  {};
+        var list =  {};
         if(this.params.gouvernorat)
-            listannonce =  Annonce.find({gouvernorat: this.params.gouvernorat}).fetch();
+            list =  Annonce.find({gouvernorat: this.params.gouvernorat}).fetch();
         else
-            listannonce =  Annonce.find({}).fetch();
+            list =  Annonce.find({}).fetch();
         return {
-            listannonce: listannonce
+            list: list
         }
     },
 
     action: function () {
-        this.render('listannonce');
+        this.render('list');
     }
-});*/
+});
 
-
+*/
 
 
 
@@ -135,3 +132,4 @@ Router.route('formModif',{
         return Annonce.findOne(this.params._id);
     }
 });
+

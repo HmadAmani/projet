@@ -6,7 +6,7 @@ Meteor.startup(function() {
 
             Uploads.insert(file);
         Uploads.iduser = Meteor.userId();
-
+        Session.set('image',file.url);
         },
 
 

@@ -19,9 +19,9 @@ Accounts.ui.config({
         inputType: 'text',
         visible: true,
     }, {
-        fieldName: 'gender',
+        fieldName: 'genre',
         showFieldLabel: false,      // If true, fieldLabel will be shown before radio group
-        fieldLabel: 'Gender',
+        fieldLabel: 'Genre',
         inputType: 'radio',
         radioLayout: 'vertical',    // It can be 'inline' or 'vertical'
         data: [{                    // Array of radio options, all properties are required
@@ -36,18 +36,18 @@ Accounts.ui.config({
         }],
         visible: true
     }, {
-        fieldName: 'country',
-        fieldLabel: 'Country',
+        fieldName: 'ville',
+        fieldLabel: 'Ville',
         inputType: 'select',
         showFieldLabel: true,
         empty: 'Please select your country of residence',
         data: [{
             id: 1,
-            label: 'United States',
+            label: 'Sousse',
             value: 'us'
         }, {
             id: 2,
-            label: 'Spain',
+            label: 'Tunis',
             value: 'es',
         }],
         visible: true

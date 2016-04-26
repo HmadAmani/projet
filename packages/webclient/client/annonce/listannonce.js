@@ -18,7 +18,7 @@ if (Meteor.isClient) {
 }
 Template.list.helpers({
     list: function () {
-        return Annonce.find({  $or:  [ {"categorie": $('#search').val()},{"gouvernorat": $('#search').val()}] }).fetch();
+        return Annonce.find({  $or:  [ {"categorie": $('#search').val()},{"prix": $('#search').val()},{"titre": $('#search').val()},{"gouvernorat": $('#search').val()}] }).fetch();
     },
 
    /* 'slide #price': function(event, ui){

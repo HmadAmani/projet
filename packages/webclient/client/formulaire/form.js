@@ -41,6 +41,7 @@ Template.form.events({
             annonce.image = $('#imgupload-1').val();
             annonce.date = new Date();
             annonce.userId = Meteor.userId();
+            annonce.url =Session.get('img');
             var template = Session.get('template');
             switch (template) {
                 case'Appartement':
@@ -49,6 +50,7 @@ Template.form.events({
                     annonce.surface = $('#surface').val();
                     annonce.placeparking = $('#placeparking').val();
                     annonce.nombresalledebain = $('#nombresalledebain').val();
+                    annonce.url =Session.get('image');
                     break;
                 case 'Maison':
                     annonce.type = $('#type').val();
