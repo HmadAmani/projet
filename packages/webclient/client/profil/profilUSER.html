@@ -5,11 +5,26 @@
             <!-- left column -->
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="text-center">
-                    <img src="{{url}}" class="avatar img-circle img-thumbnail" alt="">
-                    <h6>Télécharger différents photos...</h6>
-                    <input type="file" class="text-center center-block well well-sm">
 
 
+
+                    <h6>Uploader une nouvelle photo...</h6>
+
+
+
+                    {{#if fichiersProfil}}
+                        {{#each fichiersProfil}}
+                            <img src="{{url}}" class="avatar img-circle img-thumbnail">
+                            <a class="btn btn-danger deletePhotoProfil">Supprimer</a>
+                        {{else}}
+                            <span class="btn btn-default btn-file" id="photoProfil" >
+    Ajouter une photo<input type="file">
+                      </span>
+
+
+                        {{/each}}
+
+                    {{/if}}
                 </div>
             </div>
             <!-- edit form column -->
