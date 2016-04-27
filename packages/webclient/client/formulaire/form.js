@@ -59,6 +59,7 @@ Template.form.events({
                     annonce.surfacep = $('#surfacep').val();
                     annonce.placeparking = $('#placeparking').val();
                     annonce.nombresalledebain = $('#nombresalledebain').val();
+                    annonce.url =Session.get('image');
                     break;
                 case 'Immobilier de vacances':
                     annonce.type = $('#type').val();
@@ -67,23 +68,28 @@ Template.form.events({
                     annonce.surfacep = $('#surfacep').val();
                     annonce.placeparking = $('#placeparking').val();
                     annonce.nombresalledebain = $('#nombresalledebain').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Bureaux et Plateaux':
                     annonce.type = $('#type').val();
                     annonce.nombrepiece = $('#nombrepiece').val();
                     annonce.surface = $('#surface').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Magazins et commerces':
                     annonce.type = $('#type').val();
                     annonce.surface = $('#surface').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Terrain':
                     annonce.type = $('#type').val();
                     annonce.surface = $('#surface').val();
+                    annonce.url =Session.get('image');
                     break;
                 case 'Collocation':
                     annonce.surfaceh = $('#surfaceh').val();
                     annonce.meuble = $('#meuble').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Voiture':
                     annonce.marque = $('#marque').val();
@@ -95,6 +101,7 @@ Template.form.events({
                     annonce.transmission = $('#transmission').val();
                     annonce.puissance = $('#puissance').val();
                     annonce.condition = $('#condition').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Fourgonettes':
                     annonce.type = $('#type').val();
@@ -103,6 +110,7 @@ Template.form.events({
                     annonce.energie = $('#energie').val();
                     annonce.puissance = $('#puissance').val();
                     annonce.condition = $('#condition').val();
+                    annonce.url =Session.get('image');
                     break;
 
                 case'Moto':
@@ -111,18 +119,21 @@ Template.form.events({
                     annonce.kilometrage = $('#kilometrage').val();
                     annonce.cylindre = $('#cylindre').val();
                     annonce.condition = $('#condition').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Autres véhicules industrielles':
                     annonce.anneemodel = $('#anneemodel').val();
                     annonce.kilometrage = $('#kilometrage').val();
                     annonce.energie = $('#energie').val();
                     annonce.condition = $('#condition').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Tracteurs et véhicules agricoles':
                     annonce.anneemodel = $('#anneemodel').val();
                     annonce.kilometrage = $('#kilometrage').val();
                     annonce.energie = $('#energie').val();
                     annonce.condition = $('#condition').val();
+                    annonce.url =Session.get('image');
                     break;
                 case'Pièces de rechange et accessoires':
                     annonce.type = $('#type').val();
@@ -130,6 +141,7 @@ Template.form.events({
                     annonce.modele = $('#modele').val();
                     annonce.anneemodel = $('#anneemodel').val();
                     annonce.condition = $('#condition').val();
+                    annonce.url =Session.get('image');
 
 
             }

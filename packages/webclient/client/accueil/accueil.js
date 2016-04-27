@@ -10,4 +10,10 @@ if (Meteor.isClient) {
         }
 
     });
+
 }
+Template.accueil.events({
+    'click #adview_save_ad_main_btn': function () {
+
+    }
+});
