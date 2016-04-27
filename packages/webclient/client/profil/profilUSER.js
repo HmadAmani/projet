@@ -36,13 +36,7 @@ Template.profilUser.helpers({
     },
 });
 Template.profilUser.events({
-    "click #enregistrermodifuser":function(){
-        nom = $('#nomuser').val();
-        prenom = $('#prenomuser').val();
-        ville= $('#villeuser').val();
-        var userid=Meteor.userId()
-        Meteor.users.update(userid,{$set:{"profile.name":nom,"profile.prenom":prenom,"profile.ville":ville}})
-    },
+
     "change #photoProfil": function(event,template) {
         FS.Utility.eachFile(event, function(file) {
             // clik(1);
@@ -89,43 +83,6 @@ Template.profilUser.events({
                 });}
 
 
-
-                /*   res=    Test.findOne({createurProjet:Meteor.userId()});
-                 if (err){
-
-                 }else
-
-                 if(res!=null)
-                 {
-                 setTimeout(function() {
-                 var userId = Meteor.userId();
-
-
-                 var photo= fileObj.url();
-
-
-                 // Test.update({createurProjet:userId},{$set:{photoProfil:photo}});
-                 Meteor.call('updateTest',{createurProjet:userId}, {'photoProfil':photo});
-                 console.log(Meteor.call('updateTest',{createurProjet:userId}, {'photoProfil':photo}))
-                 },4000);
-
-
-                 }*/
-
-
-
-                /*    else {
-                 setTimeout(function() {
-                 var userId = Meteor.userId();
-
-                 var   photoURL = {
-                 "profile.photo": fileObj.url()
-                 //  "profile.photo": "/uploads/" + fileObj._id
-                 };
-                 Meteor.users.update(userId, {$set: photoURL});
-                 },3000);
-
-                 }*/
             });
         });
 

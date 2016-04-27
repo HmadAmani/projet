@@ -48,3 +48,7 @@ Meteor.publish('list_notification', function(){
 Meteor.publish("userStatus", function() {
   return Meteor.users.find({ "status.online": true }, { fields: { } });
 });
+Meteor.publish(null,function() {
+  CurrentUserId = this.userId;
+  console.log("xxxu",CurrentUserId)
+});
