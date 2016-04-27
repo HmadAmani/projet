@@ -85,10 +85,10 @@
 
     <!-- Chat
      ============================================ -->
-    <link rel="stylesheet" href=":/chat.css">
-    <script src=":/chat.js"></script>
-    <link rel="stylesheet" href=":/annoncedetails.css">
-    <script src=":/annoncedetails.js"></script>
+    <link rel="stylesheet" href="../chat.css">
+    <script src="../chat.js"></script>
+    <link rel="stylesheet" href="../annoncedetails.css">
+    <script src="../annoncedetails.js"></script>
 
 
 
@@ -244,12 +244,10 @@
                             </li>
                             <li><a href="{{pathFor 'form'}}" id="deposer"> Déposer annonce </a>
                             </li>
+                            <li><a href="" style="text-decoration: none;"><span class="bubble">{{>affichagenotification}}</span>Notifications <i class="fa fa-angle-down"></i></a>
 
-                            <li><a href="" style="text-decoration: none;"><span class="bubble">{{>affichagenotification}}</span>Notifications </a>
-                                <ul class="sub-menu">
 
                                     {{>affichagedetnotification}}
-                                </ul>
 
                             </li>
 

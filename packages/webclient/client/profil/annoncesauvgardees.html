@@ -3,38 +3,50 @@
     <section class="category-area-two control-car mar-bottom">
         <div class="container-fluid">
             <div class="row">
-                <div class="product-title-area">
-                    <h3><span>Annonces Pro</span></h3>
-                </div>
+
                 {{#each annoncessauvgardees}}
 
-                    <div class="col-md-12" style="width: 350px;">
-                        <div class="single-product">
+                <div class="col-md-12" style="width: 350px;">
+                    <div class="single-product">
 
-                            <div class="product-image">
-                                <div class="show-img">
-                                    <h1>{{titre }}</h1>
+                        <div class="product-image">
+                            <div class="show-img">
+                                <h1>{{titre }}</h1>
 
-                                    <a href="#"><img src="img/product/product-details/full/1.jpg" alt=""></a>
-                                </div>
-
+                                <a href="#"><img src="img/product/product-details/full/1.jpg" alt=""></a>
                             </div>
 
+                        </div>
+                        <div class="count-down">
 
-                            <div class="count-down">
-
-                            </div>
-                            <div class="prod-info">
-
-
-                                <div class="price-box">
-                                    {{prix}} D
-                                </div>
+                        </div>
+                        <div class="prod-info">
 
 
-
+                            <div class="price-box">
+                                <span>  {{prix}} D </span>
                             </div>
 
+                            <div class="product-meta">
+                                <span>
+                                    Categories:
+                                    <a href="#">{{categorie}}</a>
+                                </span>
+                                <span>
+                                    Gouvernorat:
+                                    <a href="#">{{gouvernorat}}</a>
+                                </span>
+                                  <span>
+                                    Adresse:
+                                    <a href="#">{{adresse}}</a>
+                                </span>
+                                     <span>
+                                    Numéro:
+                                    <a href="#">{{numero}}</a>
+                                </span>
+                            </div>
+                            {{description}}
+                        </div>
                         </div>
                     </div>    {{/each}}
 

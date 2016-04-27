@@ -40,16 +40,13 @@ Accounts.ui.config({
         fieldLabel: 'Ville',
         inputType: 'select',
         showFieldLabel: true,
-        empty: 'Please select your country of residence',
+        empty: 'Veullez saisisser votre pays de résidence',
         data: [{
             id: 1,
-            label: 'Sousse',
-            value: 'us'
-        }, {
-            id: 2,
-            label: 'Tunis',
-            value: 'es',
-        }],
+            label: 'Tunisie',
+            value: 'Tunisie'
+        }
+        ],
         visible: true
     }, {
         fieldName: 'terms',

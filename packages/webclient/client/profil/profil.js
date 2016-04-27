@@ -32,15 +32,15 @@ Template.profil.events({
    'click #modifier': function activer() {
         document.form.nom.disabled=false;
         document.form.prenom.disabled=false;
-        document.form.email.disabled=false;
+        document.form.villeuser.disabled=false;
         document.form.password.disabled=false;
         document.form.confirmpass.disabled=false;
     },
 'click #enregistrer': function(){
     var user = {};
-   Nom = $('#nom').val();
+     Nom = $('#nom').val();
     Prénom = $('#prenom').val();
-    emails = $('#emails').val();
+    ville= $('#villeuser').val();
     user.password = $('#password').val();
     user.confirmpass = ($('#confirmpass').val());
 /*
@@ -51,6 +51,7 @@ Template.profil.events({
         $set: {
             "profile.Nom": Nom,
             "profile.Prénom": Prénom,
+            "profile.ville": ville,
            //  "emails.0.address": emails,
         }
     })
