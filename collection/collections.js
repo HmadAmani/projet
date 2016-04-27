@@ -9,7 +9,7 @@ Uploads = new Mongo.Collection('uploads');
 Db=new Mongo.Collection('db');
 Messages = new Mongo.Collection('messages');
 Notifications = new Mongo.Collection('notifications');
-AnnoncesSauvgardées = new Mongo.Collection('annoncessauvgardées');
+Annoncess = new Mongo.Collection('Annoncess');
 
 Uploads.allow({
     insert: function (userId, doc) {

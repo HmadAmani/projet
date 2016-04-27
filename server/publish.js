@@ -5,6 +5,10 @@ Meteor.publish('list', function(categorie){
   else
      return Annonce.find({});
 });
+Meteor.publish('annoncessauvgardees', function(){
+
+  return [ Annonce.find(), Annoncess.find()];
+});
 /*Meteor.publish('listannonce', function(gouvernorat) {
 
   return Annonce.find({gouvernorat: gouvernorat});

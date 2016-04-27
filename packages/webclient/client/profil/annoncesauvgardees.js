@@ -11,12 +11,14 @@ if (Meteor.isClient) {
     Template.annoncesauvgardees.helpers({
 
         annoncessauvgardees: function () {
-
-            AnnoncesSauvgardées.find({iduser: Meteor.userId()}).map(function (an) {
-
-                return an._id;
-            });
-            return AnnoncesSauvgardées.find(_id);
+            if(Meteor.userId()) {
+                var ids = Annoncess.find({user_id: Meteor.userId()}).fetch();
+                var idss = ids.map(function (i) {
+                    return i.ad_id;
+                });
+                var adds = Annonce.find({'_id': {$in: idss}}).fetch();
+                return adds;
+            }
         }
 
     })

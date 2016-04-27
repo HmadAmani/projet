@@ -42,6 +42,8 @@ Package.onUse(function(api) {
       'client/chat/chat.js',
       'client/profil/annoncedetails.html',
       'client/profil/annoncedetails.js',
+      'client/profil/annoncesauvgardees.html',
+      'client/profil/annoncesauvgardees.js'
 
 
 

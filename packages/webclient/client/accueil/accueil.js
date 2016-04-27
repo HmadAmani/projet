@@ -16,10 +16,11 @@ if (Meteor.isClient) {
 Template.accueil.events({
     'click #adview_save_ad_main_btn': function () {
 
-        var x=$('#adview_save_ad_main_btn').attr('data_id');
+        var x= $('#adview_save_ad_main_btn').attr('data_id');
+        Meteor.call('sauvgarder', x);
 
 
         console.log(x);
-      // return AnnoncesSauvgardées.find({iduser:Meteor.userId()});
+
     }
 });

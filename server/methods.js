@@ -51,16 +51,10 @@ Meteor.methods({
         })
     },
 
-     sauvgarder:function(_id){
-
-         AnnoncesSauvgardées.insert('annoncessauvgardées');
-         var user = Meteor.users.findOne({_id:this.userId});
-
-    },
-
-
-
-
+     sauvgarder:function(_id) {
+        if(this.userId && _id)
+         Annoncess.insert({user_id: this.userId, ad_id: _id});
+     },
 
     'deleteFile': function(_id) {
         check(_id, String);
