@@ -18,7 +18,7 @@ Template.profil.events({
     },
 
     'click #listsauvg': function () {
-        Session.set('templateUser','annoncedetails');
+        Session.set('templateUser','annoncesauvgardees');
         console.log(Session.get('templateUser'))
 
 

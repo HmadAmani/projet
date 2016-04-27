@@ -51,6 +51,13 @@ Meteor.methods({
         })
     },
 
+     sauvgarder:function(_id){
+
+         AnnoncesSauvgardées.insert('annoncessauvgardées');
+         var user = Meteor.users.findOne({_id:this.userId});
+
+    },
+
 
 
 
