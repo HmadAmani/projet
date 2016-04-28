@@ -2,7 +2,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Annonce Pro | Annonce Pro</title>
+    <title>Home Nine | Vanesa</title>
     <meta name="description" content="">
 
     <!-- Mobile specific metas
@@ -13,9 +13,8 @@
     ============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-
-   <!-- FONTS
-   ============================================ -->
+    <!-- FONTS
+    ============================================ -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -72,7 +71,6 @@
     <!-- style CSS
     ============================================ -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="profil.css">
 
     <!-- responsive CSS
     ============================================ -->
@@ -81,7 +79,6 @@
     <!-- modernizr js
     ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-
 
     <!-- Chat
      ============================================ -->
@@ -104,10 +101,9 @@
 
 <!--  HEADER-AREA START-->
 <header>
-<div class="header_area">
-    <div class="container">
+    <div class="header_area">
         <div class="header-top-bar">
-            <div class="header-top-bar">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-xs-12 col-lg-5 col-md-5 col-md-5">
                         <div class="header-left">
@@ -124,8 +120,10 @@
                         <div class="header-right">
                             <div class="menu-top-menu">
                                 <ul>
-                                    <li><a href="{{pathFor 'profil'}}">Mon Compte</a></li>
+                                    <li><a href="{{pathFor 'profil'}}">Mon compte</a></li>
+
                                     <li><a href="#">{{> loginButtons}}</a></li>
+
 
                                 </ul>
                             </div>
@@ -135,163 +133,164 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-lg-3 col-md-3">
-            <div class="logo">
-                <a href="index.html"><img alt="" src="img/logo.png"></a>
-
-
-            </div>
-        </div>
-
-
-            <div class="col-xs-12 col-lg-9 col-md-9">
-                <div class="main-menu">
-                    <nav>
-                        <ul>
-
-                            <li><a href="{{pathFor 'accueil'}}" id="deposer"> Accueil </a>
-                            </li>
-
-                            <li><a href="index.html">Toutes catégories<i class="fa fa-angle-down"></i></a>
-                                <ul class="sup-menu">
-
-                                    <div class="mega-menu">
-                                        <div class="single-mega-menu">
-                                            <h3 class="hedding-border">Immobiliers</h3>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="appartement"}}">Appartement</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="maison"}}">Maison</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="bureaux et plateaux"}}">Bureaux et plateaux</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="magazins et commerces"}}">Magazins et commerces</a></li>
-                                            <li><a href="{{pathFor 'listannonce' categorie="Terrains"}}">Terrains</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="Immobilier de vacances"}}">Immobilier de vacances</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="Collocation"}}">Collocation</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="Autre Immobilier"}}">Autre Immobilier</a></li>
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <h3 class="hedding-border">Véhicules</h3>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="voiture"}}"> Voiture</a> </li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="moto"}}"> Motos</a> </li>
-                                            <li>  <a href="{{pathFor 'listannonce' categorie="Autres véhicules industrielles"}}">Autres véhicules industrielles</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="Tracteurs et véhicules agricoles"}}">Tracteurs et véhicules agrigoles</a></li>
-                                            <li> <a href="{{pathFor 'listannonce' categorie="fourgonettes"}}">Fourgonettes</a></li>
-                                            <li>  <a href="{{pathFor 'listannonce' categorie="Pièces de rechange et accessoires"}}">Pièces de rechange et accessoires</a></li>
-
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <h3 class="hedding-border">Emploi , affaires et services</h3>
-                                            <li><a href="{{pathFor 'listannonce' categorie="offre d'enmploi"}}">Offre d'emploi</a></li>
-                                            <li><a href="{{pathFor 'listannonce' categorie="demande d'emploi"}}">Demande d'emploi</a></li>
-                                            <li><a href="{{pathFor 'listannonce' categorie="services"}}">Services</a></li>
-
-
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <h3 class="hedding-border"><a href="product-variable.html">Multimédia</a></h3>
-                                            <li><a href="{{pathFor 'listannonce' categorie="téléphonie"}}">Téléphonie</a></li>
-                                            <li><a href="{{pathFor 'listannonce' categorie="image et son"}}">Images et son</a></li>
-                                            <li><a href="{{pathFor 'listannonce' categorie="informatique et accessoires"}}">Informatique et accessoires</a></li>
-                                            <li><a href="{{pathFor 'listannonce' categorie="jeux vidéos"}}">Jeux vidéos </a></li>
-                                            <li><a href="{{pathFor 'listannonce' categorie="gadget"}}">Gadget </a></li>
-                                        </div>
-                                    </div>
-
-                                </ul>
-                            </li>
-                            <li><a href="{{pathFor 'listannonce'}}">Toute la Tunisie<i class="fa fa-angle-down"></i></a>
-
-                                <ul class="sup-menu">
-                                    <div class="mega-menu">
-                                        <div class="single-mega-menu">
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Tunis"}}">Tunis</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Ariana"}}">Ariana</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Béja"}}">Béja</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Ben Arous"}}">Ben Arous</a></li>
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Bizerte"}}">Bizerte</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Gabès"}}">Gabès</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Gafsa"}}">Gafsa</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Jandouba"}}">Jandouba</a></li>
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Kourwen"}}">Kourwen</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Kasserine"}}">kasserine</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Gbeli"}}">Gbeli</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Le Kef"}}">Le Kef</a></li>
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Mahdia"}}">Mahdia</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Manouba"}}">Manouba</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Mednine"}}">Mednine</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Monastir"}}">Monastir</a></li>
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Nabeul"}}">Nabeul</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Sfax"}}">Sfax</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Sidi Bouzid"}}">Sidi Bouzid</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Selyena"}}">Selyana</a></li>
-                                        </div>
-                                        <div class="single-mega-menu">
-                                            <li><a href="{{pathFor 'list' gouvernorat="sousse"}}">Sousse</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Tataouine"}}">Tataouine</a></li>
-                                            <li><a href="{{pathFor 'listannonce' gouvernorat="Tozeur"}}">Tozeur</a></li>
-                                        </div>
-
-                                    </div>
-
-                                </ul>
-
-                            </li>
-                            <li><a href="{{pathFor 'form'}}" id="deposer"> Déposer annonce </a>
-                            </li>
-                            <li><a href="" style="text-decoration: none;"><span class="bubble">{{>affichagenotification}}</span>Notifications <i class="fa fa-angle-down"></i></a>
-
-
-                                    {{>affichagedetnotification}}
-
-                            </li>
-
-
-                        </ul>
-                    </nav>
-                </div>
-
-            </div>
-        </div>
-        <!-- LOGO-SEARCH-AREA END-->
-    </div>
-
-    <!-- MAINMENU-AREA START-->
-
-
-        <!-- MAINMENU-AREA END-->
-    <div class="mainmenu-area">
         <div class="container">
+            <!-- LOGO-SEARCH-AREA START-->
             <div class="row">
-
-                <div class="col-lg-9 col-md-9">
+                <div class="col-xs-12 col-lg-3 col-md-3">
+                    <div class="logo">
+                        <a href="index.html"><img alt="" src="img/logo-2.png"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-9 col-md-9">
                     <div class="search-cart-list">
                         <div class="header-search">
 
+
                             <form>
                                 <div>
-                                    <input type="text" id="search" placeholder="Que cherchez-vous?" onblur="if (this.value == '') {this.value = 'Que cherchez-vous?';}" onfocus="if (this.value == 'Search product...') {this.value = '';}">
+                                    <input type="text" placeholder="" id="search" value="Search product..." onblur="if (this.value == '') {this.value = 'Search product...';}" onfocus="if (this.value == 'Search product...') {this.value = '';}">
                                     <button type="submit">
                                         <a href="{{pathFor 'list'}}"  id="rechercher"> <i class="fa fa-search"></i></a>
                                     </button>
                                 </div>
                             </form>
                         </div>
-                        <div class="cart-total">
-                            <ul>
 
-                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- LOGO-SEARCH-AREA END-->
+        </div>
+        <!-- MAINMENU-AREA START-->
+        <div class="mainmenu-area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-9 col-md-9">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <ul>
+
+                                        <li><a href="{{pathFor 'accueil'}}" id="deposer"> Accueil </a>
+                                        </li>
+
+                                        <li><a href="index.html">Toutes catégories<i class="fa fa-angle-down"></i></a>
+                                            <ul class="sup-menu">
+
+                                                <div class="mega-menu">
+                                                    <div class="single-mega-menu">
+                                                        <h3 class="hedding-border">Immobiliers</h3>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="appartement"}}">Appartement</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="maison"}}">Maison</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="bureaux et plateaux"}}">Bureaux et plateaux</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="magazins et commerces"}}">Magazins et commerces</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="Terrains"}}">Terrains</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="Immobilier de vacances"}}">Immobilier de vacances</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="Collocation"}}">Collocation</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="Autre Immobilier"}}">Autre Immobilier</a></li>
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <h3 class="hedding-border">Véhicules</h3>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="voiture"}}"> Voiture</a> </li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="moto"}}"> Motos</a> </li>
+                                                        <li>  <a href="{{pathFor 'listannonce' categorie="Autres véhicules industrielles"}}">Autres véhicules industrielles</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="Tracteurs et véhicules agricoles"}}">Tracteurs et véhicules agrigoles</a></li>
+                                                        <li> <a href="{{pathFor 'listannonce' categorie="fourgonettes"}}">Fourgonettes</a></li>
+                                                        <li>  <a href="{{pathFor 'listannonce' categorie="Pièces de rechange et accessoires"}}">Pièces de rechange et accessoires</a></li>
+
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <h3 class="hedding-border">Emploi , affaires et services</h3>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="offre d'enmploi"}}">Offre d'emploi</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="demande d'emploi"}}">Demande d'emploi</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="services"}}">Services</a></li>
+
+
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <h3 class="hedding-border"><a href="product-variable.html">Multimédia</a></h3>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="téléphonie"}}">Téléphonie</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="image et son"}}">Images et son</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="informatique et accessoires"}}">Informatique et accessoires</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="jeux vidéos"}}">Jeux vidéos </a></li>
+                                                        <li><a href="{{pathFor 'listannonce' categorie="gadget"}}">Gadget </a></li>
+                                                    </div>
+                                                </div>
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="{{pathFor 'listannonce'}}">Toute la Tunisie<i class="fa fa-angle-down"></i></a>
+
+                                            <ul class="sup-menu">
+                                                <div class="mega-menu">
+                                                    <div class="single-mega-menu">
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Tunis"}}">Tunis</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Ariana"}}">Ariana</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Béja"}}">Béja</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Ben Arous"}}">Ben Arous</a></li>
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Bizerte"}}">Bizerte</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Gabès"}}">Gabès</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Gafsa"}}">Gafsa</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Jandouba"}}">Jandouba</a></li>
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Kourwen"}}">Kourwen</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Kasserine"}}">kasserine</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Gbeli"}}">Gbeli</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Le Kef"}}">Le Kef</a></li>
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Mahdia"}}">Mahdia</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Manouba"}}">Manouba</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Mednine"}}">Mednine</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Monastir"}}">Monastir</a></li>
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Nabeul"}}">Nabeul</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Sfax"}}">Sfax</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Sidi Bouzid"}}">Sidi Bouzid</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Selyena"}}">Selyana</a></li>
+                                                    </div>
+                                                    <div class="single-mega-menu">
+                                                        <li><a href="{{pathFor 'list' gouvernorat="sousse"}}">Sousse</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Tataouine"}}">Tataouine</a></li>
+                                                        <li><a href="{{pathFor 'listannonce' gouvernorat="Tozeur"}}">Tozeur</a></li>
+                                                    </div>
+
+                                                </div>
+
+                                            </ul>
+
+                                        </li>
+                                        <li><a href="{{pathFor 'form'}}" id="deposer"> Déposer annonce </a>
+                                        </li>
+                                        <li><a href="" style="text-decoration: none;"><span class="bubble">{{>affichagenotification}}</span>Notifications <i class="fa fa-angle-down"></i></a>
+
+
+                                            {{>affichagedetnotification}}
+
+                                        </li>
+
+                              </ul>
+                                    </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- MAINMENU-AREA END-->
+
     </div>
+
+
+    <!-- MAINMENU-AREA START-->
+
+
+        <!-- MAINMENU-AREA END-->
 
     <!--  HEADER-AREA START-->
     <div class="slider-and-category-saidebar">

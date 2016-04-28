@@ -17,28 +17,28 @@
                                 <h1>Immobilier</h1>
                             <li><a href="{{pathFor 'listannonce' categorie="appartement"}}"><i class="fa fa-home" aria-hidden="true"></i>Appartement</a></li>
                             <li> <a href="{{pathFor 'listannonce' categorie="maison"}}"><i class="fa fa-home" aria-hidden="true"></i>Maison</a></li>
-                            <li> <a href="{{pathFor 'listannonce' categorie="bureaux et plateaux"}}">Bureaux et plateaux</a></li>
-                            <li> <a href="{{pathFor 'listannonce' categorie="magazins et commerces"}}">Magazins et commerces</a></li>
-                            <li><a href="{{pathFor 'listannonce' categorie="Terrains"}}">Terrains</a></li>
-                            <li> <a href="{{pathFor 'listannonce' categorie="Immobilier de vacances"}}">Immobilier de vacances</a></li>
-                            <li> <a href="{{pathFor 'listannonce' categorie="Collocation"}}">Collocation</a></li>
-                            <li> <a href="{{pathFor 'listannonce' categorie="Autre Immobilier"}}">Autre Immobilier</a></li>
+                            <i> <a href="{{pathFor 'listannonce' categorie="bureaux et plateaux"}}"> <i class="fa fa-home" aria-hidden="true"></i>Bureaux et plateaux</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="magazins et commerces"}}"> <i class="fa fa-home" aria-hidden="true"></i> Magazins et commerces</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="Terrains"}}"> <i class="fa fa-home" aria-hidden="true"></i> Terrain </a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Immobilier de vacances"}}"> <i class="fa fa-home" aria-hidden="true"></i>Immobilier de vacances</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Collocation"}}"> <i class="fa fa-home" aria-hidden="true"></i>Collocation</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Autre Immobilier"}}"> <i class="fa fa-home" aria-hidden="true"></i>Autre Immobilier</a></li>
 
                             </li>
                             <h1>Véhicules</h1>
                             <li> <a href="{{pathFor 'listannonce' categorie="voiture"}}"><i class="fa fa-car" aria-hidden="true"></i> Voiture</a> </li>
                             <li> <a href="{{pathFor 'listannonce' categorie="moto"}}"> <i class="fa fa-motorcycle" aria-hidden="true"></i>Motos</a> </li>
-                            <li>  <a href="{{pathFor 'listannonce' categorie="Autres véhicules industrielles"}}">Autres véhicules industrielles</a></li>
-                            <li> <a href="{{pathFor 'listannonce' categorie="Tracteurs et véhicules agricoles"}}">Tracteurs et véhicules agrigoles</a></li>
-                            <li> <a href="{{pathFor 'listannonce' categorie="fourgonettes"}}">Fourgonettes</a></li>
-                            <li>  <a href="{{pathFor 'listannonce' categorie="Pièces de rechange et accessoires"}}">Pièces de rechange et accessoires</a></li>
+                            <li>  <a href="{{pathFor 'listannonce' categorie="Autres véhicules industrielles"}}"><i class="fa fa-truck" aria-hidden="true"></i>Autres véhicules industrielles</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="Tracteurs et véhicules agricoles"}}"><i class="fa fa-truck" aria-hidden="true"></i>Tracteurs et véhicules agrigoles</a></li>
+                            <li> <a href="{{pathFor 'listannonce' categorie="fourgonettes"}}"><i class="fa fa-truck" aria-hidden="true"></i>Fourgonettes</a></li>
+                            <li>  <a href="{{pathFor 'listannonce' categorie="Pièces de rechange et accessoires"}}"><i class="fa fa-pie-chart" aria-hidden="true"></i>Pièces de rechange et accessoires</a></li>
 
                             <h1>Multimédia</h1>
-                            <li><a href="{{pathFor 'listannonce' categorie="téléphonie"}}">Téléphonie</a></li>
-                            <li><a href="{{pathFor 'listannonce' categorie="image et son"}}">Images et son</a></li>
-                            <li><a href="{{pathFor 'listannonce' categorie="informatique et accessoires"}}">Informatique et accessoires</a></li>
-                            <li><a href="{{pathFor 'listannonce' categorie="jeux vidéos"}}">Jeux vidéos </a></li>
-                            <li><a href="{{pathFor 'listannonce' categorie="gadget"}}">Gadget </a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="téléphonie"}}"><i class="fa fa-mobile" aria-hidden="true"></i>Téléphonie</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="image et son"}}"><i class="fa fa-file-image-o" aria-hidden="true"></i>Images et son</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="informatique et accessoires"}}"><i class="fa fa-desktop" aria-hidden="true"></i>Informatique et accessoires</a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="jeux vidéos"}}"><i class="fa fa-file-video-o" aria-hidden="true"></i>Jeux vidéos </a></li>
+                            <li><a href="{{pathFor 'listannonce' categorie="gadget"}}"><i class="fa fa-laptop" aria-hidden="true"></i>Gadget </a></li>
 
 
 
@@ -121,20 +121,19 @@
                                     <div class="col-lg-8 col-md-8 col-sm-8">
                                         <a href="{{pathFor 'chat' _id=userId}}" class="btn btn-4 blue" background="#3399cc" id="chat">Chat</a>
                                         <div class="product-info">
-                                            <div class="compare-button" id="btnsauvg" >
-                                                <a id="okok" href="#" class="color-tooltip"><i class="fa fa-heart"></i></a>
-                                            </div>
-                                            <div class="price-box">
-			               	          <span class="special-price">
-                                         {{ prix }} D
-                                       </span>
-                                            </div>
+
+
                                             <h2 class="product-name">
 
                                                 <a href="{{pathFor 'annonce' id=_id}}">
                                                     {{titre}}
                                                 </a>
                                             </h2>
+                                            <div class="price-box">
+			               	          <span class="special-price">
+                                         {{ prix }} D
+                                       </span>
+                                            </div>
                                             <div class="product-desc">
                                                 <p>{{description}}</p>
                                             </div>
@@ -152,7 +151,14 @@
                                     <a href="#">{{adresse}}</a>
                                 </span>
                                  </div>
+                                            <a href="{{pathFor 'chat' _id=userId}}" class="btn btn-4 blue" background="#3399cc" id="chat">Chat</a>
 
+                                            <div class="action-btn">
+                                                <a data_id="{{_id}}" id="adview_save_ad_main_btn" class="btn btn-large js-save-ad btn-block" href="#" rel="nofollow">
+                                                    <i class="fonticon-heart-empty fonticon-color-pink active fonticon-horizontal-fix"></i> Sauvegarder l'annonce
+                                                </a>
+
+                                            </div>
                                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Vendeur</button>
 
                                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
