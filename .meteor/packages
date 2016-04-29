@@ -45,3 +45,4 @@ autopublish
 cfs:collection
 cfs:ejson-file
 cfs:standard-packages
+cfs:graphicsmagick

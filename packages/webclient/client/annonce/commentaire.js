@@ -7,6 +7,7 @@ Template.annonce.events({
         commentaire.contenu = $('#commentaire').val();
         commentaire.idannonce = this._id;
         commentaire.name = Meteor.user().profile.name;
+        commentaire.photo = Meteor.user().profile.display_picture;
 
         commentaire.iduser = Meteor.userId();
         var date=new Date();
