@@ -41,7 +41,6 @@ mizzao:user-status
 houston:admin
 okgrow:analytics
 mizzao:jquery-ui
-autopublish
 cfs:collection
 cfs:ejson-file
 cfs:standard-packages
