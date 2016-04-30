@@ -1,7 +1,7 @@
 /**
  * Created by Amani on 29/04/2016.
  */
-var base = "";
+/*var base = "";
 if (Meteor.isServer) {
     base = process.env.PWD;
     var createThumb = function(fileObj, readStream, writeStream) {
@@ -41,3 +41,4 @@ Images.allow({
         return true;
     },
 });
+    */
