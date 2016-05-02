@@ -94,6 +94,8 @@ Meteor.methods({
 
         Notifications.insert(not);
     },
+
+
 });
 
 if (Meteor.isServer) {
@@ -126,3 +128,12 @@ Houston.methods("users", {
     }
 });
 Houston.add_collection(Meteor.users);
+
+if (Meteor.isServer) {
+    Email.send({
+        from: "amani@gmail.com",
+        to: "ameni.hmad@gmail.com",
+        subject: "Subject",
+        text: "Here is some text"
+    });
+}

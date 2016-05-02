@@ -116,7 +116,12 @@ Template.listannonce.rendered=function(){
         'click #chat': function(){
             Router.go('chat');
         },
+            'click #SendEmail': function(){
+                Meteor.call('send', _id);
+                Router.go(('/listannonce'));
+                console.log("ggggggggggg");
 
+             },
 
 
         'click .compare-button':function(){
