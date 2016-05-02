@@ -46,7 +46,7 @@ Meteor.methods({
             $set: {
                 Nom: user.Nom,
                 Prénom: user.Prénom,
-                emails: user.emails,
+                ville: user.ville,
             }
         })
     },
@@ -118,7 +118,7 @@ if (Meteor.isServer) {
 Houston.methods("annonce", {
     "Publish": function (annonce) {
         Posts.update(annonce._id, {$set: {published: true}});
-        return post.name + " published successfully.";
+        return annonce.name + " published successfully.";
     }
 });
 Houston.methods("users", {
@@ -128,6 +128,11 @@ Houston.methods("users", {
     }
 });
 Houston.add_collection(Meteor.users);
+
+
+
+
+
 
 if (Meteor.isServer) {
     Email.send({
