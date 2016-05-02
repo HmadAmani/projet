@@ -2,8 +2,8 @@
  * Created by Amani on 02/05/2016.
  */
 Email.send({
-    to: "amani@gmail.com",
-    from: "ameni.hmad@gmail.com",
+    to: "ameni.hmad@gmail.com",
+    from: "ameni.hmad@hotmail.fr",
     subject: "Example Email",
     html: "<p><strong>This will render as bold text</strong>, but this will not.</p>"
 });

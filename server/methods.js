@@ -124,7 +124,7 @@ Houston.methods("annonce", {
 Houston.methods("users", {
     "Publish": function (users) {
         Posts.update(users._id, {$set: {published: true}});
-        return post.name + " published successfully.";
+        return users.name + " published successfully.";
     }
 });
 Houston.add_collection(Meteor.users);
