@@ -68,12 +68,7 @@ Meteor.methods({
         Uploads.remove(_id);
     }
 });
-Houston.methods("Posts", {
-    "Publish": function (post) {
-        Posts.update(post._id, {$set: {published: true}});
-        return post.name + " published successfully.";
-    }
-});
+
 Meteor.methods({
 
     createCom: function (com) {
@@ -118,3 +113,16 @@ if (Meteor.isServer) {
     });
 
 }
+Houston.methods("annonce", {
+    "Publish": function (annonce) {
+        Posts.update(annonce._id, {$set: {published: true}});
+        return post.name + " published successfully.";
+    }
+});
+Houston.methods("users", {
+    "Publish": function (users) {
+        Posts.update(users._id, {$set: {published: true}});
+        return post.name + " published successfully.";
+    }
+});
+Houston.add_collection(Meteor.users);
