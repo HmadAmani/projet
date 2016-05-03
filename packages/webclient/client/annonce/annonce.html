@@ -63,8 +63,14 @@
                                     Adresse:
                                     <a href="#">{{adresse}}</a>
                                 </span>
+                                <div class="action-btn">
+                                    <a data_id="{{_id}}" id="adview_save_ad_main_btn" class="btn btn-large js-save-ad btn-block" href="#" rel="nofollow">
+                                        <i class="fonticon-heart-empty fonticon-color-pink active fonticon-horizontal-fix"></i> Sauvegarder l'annonce
+                                    </a>
+
+                                </div>
                             </div>
-                            <br>Les com :::::<br>
+                            <br>Les commentaires sont:<br>
                             <table >
                                 {{#each list_commentaire}}
                                     <tr><td><img src={{photo}} width="40px" height="40px"> <br></td><td> <a href="#" style="color:#ff7572;">{{name}} <br> </a></td><td>{{contenu }}</td></tr>

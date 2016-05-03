@@ -117,7 +117,7 @@ if (Meteor.isServer) {
 }
 Houston.methods("annonce", {
     "Publish": function (annonce) {
-        Posts.update(annonce._id, {$set: {published: true}});
+        Annonce.update(annonce._id, {$set: {published: true}});
         return annonce.name + " published successfully.";
     }
 });

@@ -70,6 +70,8 @@
 
                         <a href="#">Filter</a>
 
+
+
                     </div>
                     <!-- FILTER_PRICE END-->
                     <!-- CATEGORY-SIDEBAR-END -->
@@ -118,6 +120,7 @@
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8">
                                         <a href="{{pathFor 'chat' _id=userId}}" class="btn btn-4 blue" background="#3399cc" id="chat">Chat</a>
+
                                         <div class="product-info">
 
 
@@ -149,7 +152,7 @@
                                     <a href="#">{{adresse}}</a>
                                 </span>
                                  </div>
-                                            <a href="{{pathFor 'chat' _id=userId}}" class="btn btn-4 blue" background="#3399cc" id="chat">Chat</a>
+
 
                                             <div class="action-btn">
                                                 <a data_id="{{_id}}" id="adview_save_ad_main_btn" class="btn btn-large js-save-ad btn-block" href="#" rel="nofollow">
@@ -349,6 +352,12 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-8">
+                                        <h2 class="product-name">
+
+                                            <a href="{{pathFor 'annonce' id=_id}}">
+                                                {{titre}}
+                                            </a>
+                                        </h2>
                                         <a href="{{pathFor 'chat' _id=userId}}" class="btn btn-4 blue" background="#3399cc" id="chat">Chat</a>
                                         <div class="product-info">
                                             <div class="price-box">
@@ -356,12 +365,7 @@
                                          {{ prix }} D
                                        </span>
                                             </div>
-                                            <h2 class="product-name">
 
-                                                <a href="{{pathFor 'annonce' id=_id}}">
-                                                    {{titre}}
-                                                </a>
-                                            </h2>
                                             <div class="product-desc">
                                                 <p>{{description}}</p>
                                             </div>

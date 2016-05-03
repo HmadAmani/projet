@@ -61,10 +61,10 @@ Template.listannonce.rendered=function(){
             if (hours1 >= 12) {
                 if (hours1 == 12) {
                     hours1 = hours1;
-                    minutes1 = minutes1 + " PM";
+                    minutes1 = minutes1 + " D";
                 } else {
                     hours1 = hours1 - 12;
-                    minutes1 = minutes1 + " PM";
+                    minutes1 = minutes1 + " D";
                 }
             } else {
                 hours1 = hours1;
@@ -104,8 +104,8 @@ Template.listannonce.rendered=function(){
             $('.slider-time2').html(hours2 + ':' + minutes2);
         }
     });
-    if(! $('#price').data('uiSlide')){
-    $('#price').slider({
+    if(! $('#prix').data('uiSlide')){
+    $('#prix').slider({
         slide: function(event,ui){
             alert(ui.value)
         }
@@ -119,13 +119,10 @@ Template.listannonce.rendered=function(){
             'click #SendEmail': function(){
                 Meteor.call('send', _id);
                 Router.go(('/listannonce'));
-                console.log("ggggggggggg");
+               // console.log("ggggggggggg");
 
              },
 
 
-        'click .compare-button':function(){
-       console.log("ggggggggggg",this._id);
-        }
-    })
+        })
 }

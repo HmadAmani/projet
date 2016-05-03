@@ -7,6 +7,9 @@ if (Meteor.isClient) {
     Template.accueil.helpers({
         list_voiture_acceuil: function () {
             return Annonce.find({categorie: "moto"},{limit: 5});
+        },
+       appartement: function () {
+            return Annonce.find({categorie: "appartement"},{limit: 5});
         }
 
     });
