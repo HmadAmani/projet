@@ -11,6 +11,9 @@ Template.form.helpers({
     filesToUpload: function() {
         return Uploader.info.get();
     },
+    myFormData: function() {
+        return { directoryName: 'images', prefix: this._id, _id: this._id }
+    },
     template : function(){
         return Session.get('template');
     },

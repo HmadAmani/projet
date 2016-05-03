@@ -123,7 +123,7 @@ Houston.methods("annonce", {
 });
 Houston.methods("users", {
     "Publish": function (users) {
-        Posts.update(users._id, {$set: {published: true}});
+        Users.update(users._id, {$set: {published: true}});
         return users.name + " published successfully.";
     }
 });

@@ -19,7 +19,8 @@ Template.formModif.helpers({
 Template.formModif.events({
     'click #sauvgarder': function() {
         var an = {};
-        var _id = Annonce.findOne()._id;
+        var _id=this._id;
+       // var _id = Annonce.findOne()._id;
         an.titre = $('#titre').val();
         an.description = $('#desc').val();
         an.prix = Number($('#prix').val());

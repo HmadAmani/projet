@@ -222,6 +222,25 @@
                             <div class="clear"></div>
                         </div>
                     </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3>Dropzone</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label>Simple</label>
+                                    <pre class="well">&#123;&#123;&gt; dropzone &#125;&#125;</pre>
+                                    {{> dropzone }}
+                                </li>
+                                <li class="list-group-item">
+                                    <label>With form data</label>
+                                    <pre class="well">&#123;&#123;&gt; dropzone formData=myFormData &#125;&#125;</pre>
+                                    {{> dropzone formData=myFormData }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <div class="next-btn">
                         <button type="button" class="btn btn-5 blue" data-link="basic-data" onClick="moveform(this,'basic-data')">Retour</button>
