@@ -10,7 +10,7 @@ Meteor.startup(function() {
         // if(Session.get('compteur')<3){
         Uploads.insert(file);
         //Uploads.find({})
-        Session.set('image',file);
+        Session.set('image',file,url);
         console.log(file.url);
         Session.set('compteur', Session.get('compteur') + 1);
         Session.set('compteurM',Session.get('compteurM')+1);

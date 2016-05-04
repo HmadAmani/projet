@@ -96,6 +96,7 @@ Meteor.methods({
     },
 
 
+
 });
 
 if (Meteor.isServer) {
@@ -129,16 +130,20 @@ Houston.methods("users", {
 });
 Houston.add_collection(Meteor.users);
 
+Meteor.methods({
+    sendEmail: function (to, from, subject, text) {
+        check([to, from, subject, text], [String]);
+
+        this.unblock();
+
+        Email.send({
+            to: 'ameni.hmad@gmail.com',
+            from: 'ameni.hmad@hotmail.fr',
+            subject: 'Meteor Can Send Emails via Gmail',
+            text:' text'
+        });
+    }
+});
 
 
 
-
-
-if (Meteor.isServer) {
-    Email.send({
-        from: "amani@gmail.com",
-        to: "ameni.hmad@gmail.com",
-        subject: "Subject",
-        text: "Here is some text"
-    });
-}
