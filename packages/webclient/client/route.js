@@ -36,8 +36,8 @@ Router.route('/listannonce/:categorie?', {
 });
 
 
-/*Router.route('/list/:gouvernorat?', {
-    name: 'list',
+Router.route('/list/:gouvernorat?', {
+    name: 'list_gov',
 
     data: function () {
         var list =  {};
@@ -54,7 +54,7 @@ Router.route('/listannonce/:categorie?', {
         this.render('list');
     }
 });
-*/
+
 
 
 
