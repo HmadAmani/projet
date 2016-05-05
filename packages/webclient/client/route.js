@@ -134,3 +134,4 @@ Router.route('formModif',{
     }
 });
 
+Router.route('map');

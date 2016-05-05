@@ -46,6 +46,7 @@ Package.onUse(function(api) {
       'client/profil/annoncesauvgardees.js',
       'client/googleMap/google.html',
       'client/googleMap/googlemap.js',
+      'client/accueil/map.html',
 
 
 
