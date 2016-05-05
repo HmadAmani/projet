@@ -38,6 +38,7 @@ Template.profil.events({
     },
 'click #enregistrer': function(){
     var user = {};
+    user.photo = Meteor.user().profile.display_picture;
      Nom = $('#nom').val();
     Prénom = $('#prenom').val();
     ville= $('#villeuser').val();

@@ -44,7 +44,7 @@ Template.list.helpers({
 
 
 });
-Template.listannonce.rendered=function(){
+Template.listannonce.rendered=function() {
     $("#slider-range").slider({
         range: true,
         min: 0,
@@ -76,7 +76,6 @@ Template.listannonce.rendered=function(){
             }
 
 
-
             $('.slider-time').html(hours1 + ':' + minutes1);
 
             var hours2 = Math.floor(ui.values[1] / 60);
@@ -104,25 +103,28 @@ Template.listannonce.rendered=function(){
             $('.slider-time2').html(hours2 + ':' + minutes2);
         }
     });
-    if(! $('#prix').data('uiSlide')){
-    $('#prix').slider({
-        slide: function(event,ui){
-            alert(ui.value)
-        }
-    });
-}
+    if (!$('#prix').data('uiSlide')) {
+        $('#prix').slider({
+            slide: function (event, ui) {
+                alert(ui.value)
+            }
+        });
+    }
 
     Template.listannonce.events({
-        'click #chat': function(){
+        'click #chat': function () {
             Router.go('chat');
         },
-            'click #SendEmail': function(){
-                Meteor.call('send', _id);
-                Router.go(('/listannonce'));
-               // console.log("ggggggggggg");
+        'click #envoyer': function () {
+            Meteor.call('send', {
+                to: 'ameni.hmad@gmail.com',
+                from: 'ameni.hmad@hotmail.fr',
+                subject: 'Meteor Can Send Emails via Gmail',
+                text: ' text'
 
-             },
+            });
 
 
-        })
-}
+        }
+    })
+};
