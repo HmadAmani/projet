@@ -42,7 +42,7 @@ Meteor.publish('data', function() {
   return Annonce.find();
 });
 Meteor.publish('list_notification', function(){
-  return Notifications.find({userId: this.userId, read:false});
+  return Notifications.find();
 });
 
 Meteor.publish("userStatus", function() {

@@ -40,17 +40,21 @@ if (Meteor.isClient) {
         }
     });
 }
+if (Meteor.isClient) {
+    Meteor.subscribe("list_notification");
 Template.affichagenotification.helpers({
     list_notification: function () {
         // var an=Annonce.find( {_id: this._id} );
 
         return Notifications.find({$and: [ {utilisateur:Meteor.userId()},{ vu:0 } ] } ).count();
     }
-});
+});}
+if (Meteor.isClient) {
+    Meteor.subscribe("list_det_notification");
+    Template.affichagedetnotification.helpers({
+        list_det_notification: function () {
 
-Template.affichagedetnotification.helpers({
-    list_det_notification: function () {
-
-        return Notifications.find({$and: [ {utilisateur:Meteor.userId()},{ vu:0 } ] } );
-    }
-});
+            return Notifications.find({$and: [{utilisateur: Meteor.userId()}, {vu: 0}]});
+        }
+    });
+}
