@@ -147,12 +147,100 @@
 
 
 <template name="maprecherche">
-    jjfdvjl
+    {{#each ad }}
+        <div class="product-view-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-7 col-lg-7 col-md-7">
+                        <div class="product-datails-tab">
+                            <div class="larg-img">
+                                <div class="tab-content">
+                                    <div class="product-description">
+                                        <a href="{{pathFor 'annonce' id=_id}}">
+                                            <h1>{{titre}}</h1>
+                                        </a>
+                                    </div>
+                                    <div id="image1" class="tab-pane fade in active">
+                                        <div class="simpleLens-big-image-container">
+                                            <a class="simpleLens-lens-image" data-lens-image="img/product/product-details/full/1.jpg">
+                                                <img alt="" src="{{url}}" class="simpleLens-big-image">
+                                            </a>
+                                            <a class="fancybox" data-fancybox-group="group" href="img/product/product-details/full/1.jpg"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
+                                    <div id="image2" class="tab-pane fade">
+                                        <div class="simpleLens-big-image-container">
+                                            <a class="simpleLens-lens-image" data-lens-image="img/product/product-details/full/2.jpg">
+                                                <img alt="" src="{{url}}" class="simpleLens-big-image">
+                                            </a>
+                                            <a class="fancybox" data-fancybox-group="group" href="img/product/product-details/full/2.jpg"><i class="fa fa-expand"></i></a>
+                                        </div>
+                                    </div>
 
-    {{#each list_maprecherche}}
-        ***
-        {{gouvernorat}}
-        ***
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-lg-5 col-md-5">
+                    <div class="product-details-area">
+                        <div class="product-header">
+
+                        </div>
+                        <div class="product-description">
+
+
+                            <div class="price-box">
+                                <h4>{{prix}} D</h4>
+                            </div>
+                            <div class="short-description">
+                                <h4>{{description}}</h4>
+                            </div>
+
+
+                            <div class="product-meta">
+                                <span>
+                                    Categories:
+                                    <a href="#">{{categorie}}</a>
+                                </span>
+                                <span>
+                                    Gouvernorat:
+                                    <a href="#">{{gouvernorat}}</a>
+                                </span>
+                                  <span>
+                                    Adresse:
+                                    <a href="#">{{adresse}}</a>
+                                </span>
+                                <div class="action-btn">
+                                    <a data_id="{{_id}}" id="adview_save_ad_main_btn" class="btn btn-large js-save-ad btn-block" href="#" rel="nofollow">
+                                        <i class="fa fa-heart" aria-hidden="true"></i> Sauvegarder l'annonce
+                                    </a>
+
+                                </div>
+                            </div>
+                            <br>Les commentaires sont:<br>
+                            <table >
+                                {{#each list_commentaire}}
+                                    <tr><td><img src={{photo}} width="40px" height="40px"> <br></td><td> <a href="#" style="color:#ff7572;">{{name}} <br> </a></td><td>{{contenu }}</td></tr>
+                                    <TR>
+                                        <td></td><td> {{date}}</td>
+                                    </TR>
+                                {{/each}}
+                            </table>
+                            <br>FIN com :::::<br>
+                            <div class="form-group">
+                                <div class="form-left" align="left">
+                                    <input type="text" class="form-control" placeholder=" Votre Commentaire" name="commentaire" id="commentaire" required>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="ajouterCommentaire"><a href="#" class="btn btn-primary">Ajouter Commentaire</a></button>
+                            <div class="share-buttons"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
     {{/each}}
-    ///
 </template>

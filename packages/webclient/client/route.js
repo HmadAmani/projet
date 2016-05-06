@@ -140,8 +140,12 @@ Router.route('/maprecherche/:_id', {
 
     data: function(){
         console.log(this.params._id);console.log("ggg");
+        console.log(Annonce.find({"gouvernorat":this.params._id}).fetch());
 
-        return Annonce.findOne({gouvernorat:this.params._id});
+        return {ad : Annonce.find({"gouvernorat" :this.params._id}).fetch()};
+    },
+    action: function(){
+        this.render('maprecherche');
     }
 
 });
