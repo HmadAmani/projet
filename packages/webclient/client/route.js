@@ -82,7 +82,7 @@ Router.route('contact');
 Router.route('accueil');
 Router.route('form');
 Router.route('appartement');
-Router.route('list');
+//Router.route('list');
 Router.route('commentaire');
 Router.route('profil',{
     path: '/profil',
