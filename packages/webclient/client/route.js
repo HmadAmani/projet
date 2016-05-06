@@ -36,22 +36,22 @@ Router.route('/listannonce/:categorie?', {
 });
 
 
-Router.route('/list/:gouvernorat?', {
+Router.route('/listannonce/:gouvernorat?', {
     name: 'list_gov',
 
     data: function () {
-        var list =  {};
+        var listannonce =  {};
         if(this.params.gouvernorat)
-            list =  Annonce.find({gouvernorat: this.params.gouvernorat}).fetch();
+            listannonce =  Annonce.find({gouvernorat: this.params.gouvernorat}).fetch();
         else
-            list =  Annonce.find({}).fetch();
+            listannonce =  Annonce.find({}).fetch();
         return {
-            list: list
+            listannonce: listannonce
         }
     },
 
     action: function () {
-        this.render('list');
+        this.render('listannonce');
     }
 });
 
@@ -82,7 +82,7 @@ Router.route('contact');
 Router.route('accueil');
 Router.route('form');
 Router.route('appartement');
-//Router.route('list');
+Router.route('list');
 Router.route('commentaire');
 Router.route('profil',{
     path: '/profil',
@@ -134,4 +134,15 @@ Router.route('formModif',{
     }
 });
 
+Router.route('/maprecherche/:_id', {
+
+    name: "maprecherche",
+
+    data: function(){
+        console.log(this.params._id);console.log("ggg");
+
+        return Annonce.findOne({gouvernorat:this.params._id});
+    }
+
+});
 Router.route('map');

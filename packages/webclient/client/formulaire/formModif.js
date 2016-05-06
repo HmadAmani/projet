@@ -27,6 +27,7 @@ Template.formModif.events({
         an.numero = Number($('#numero').val());
         an.categorie = ($('#categorie').val());
         an.gouvernorat = ($('#gouvernorat').val());
+        an.url =Session.get('image');
         Meteor.call('update', _id, an);
             Router.go(('/profil'));
         },

@@ -60,7 +60,7 @@ Template.profil.events({
    Router.go('/profil');
 
 
-},
+}
 
 });
 

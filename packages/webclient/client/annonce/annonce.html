@@ -10,10 +10,15 @@
                     <div class="product-datails-tab">
                         <div class="larg-img">
                             <div class="tab-content">
+                                <div class="product-description">
+                                    <a href="{{pathFor 'annonce' id=_id}}">
+                                        <h1>{{titre}}</h1>
+                                    </a>
+                                    </div>
                                 <div id="image1" class="tab-pane fade in active">
                                     <div class="simpleLens-big-image-container">
                                         <a class="simpleLens-lens-image" data-lens-image="img/product/product-details/full/1.jpg">
-                                            <img alt="" src="img/product/product-details/full/1.jpg" class="simpleLens-big-image">
+                                            <img alt="" src="{{url}}" class="simpleLens-big-image">
                                         </a>
                                         <a class="fancybox" data-fancybox-group="group" href="img/product/product-details/full/1.jpg"><i class="fa fa-expand"></i></a>
                                     </div>
@@ -21,7 +26,7 @@
                                 <div id="image2" class="tab-pane fade">
                                     <div class="simpleLens-big-image-container">
                                         <a class="simpleLens-lens-image" data-lens-image="img/product/product-details/full/2.jpg">
-                                            <img alt="" src="img/product/product-details/full/2.jpg" class="simpleLens-big-image">
+                                            <img alt="" src="{{url}}" class="simpleLens-big-image">
                                         </a>
                                         <a class="fancybox" data-fancybox-group="group" href="img/product/product-details/full/2.jpg"><i class="fa fa-expand"></i></a>
                                     </div>
@@ -38,9 +43,7 @@
 
                         </div>
                         <div class="product-description">
-                            <a href="{{pathFor 'annonce' id=_id}}">
-                                <h1>{{titre}}</h1>
-                            </a>
+
 
                             <div class="price-box">
                                 <h4>{{prix}} D</h4>
@@ -65,7 +68,7 @@
                                 </span>
                                 <div class="action-btn">
                                     <a data_id="{{_id}}" id="adview_save_ad_main_btn" class="btn btn-large js-save-ad btn-block" href="#" rel="nofollow">
-                                        <i class="fonticon-heart-empty fonticon-color-pink active fonticon-horizontal-fix"></i> Sauvegarder l'annonce
+                                        <i class="fa fa-heart" aria-hidden="true"></i> Sauvegarder l'annonce
                                     </a>
 
                                 </div>
@@ -93,6 +96,16 @@
                 </div>
             </div>
         </div>
-
+    <div class="sidebar-item">
+        <div class="w-title">Find This Project On</div>
+        <div class="find-project">
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/" class="fb transition-all" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/" class="tw transition-all" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/" class="yt transition-all" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                <li><a target="_blank" href="#" class="wb transition-all" title="Website"><i class="fa fa-link"></i></a></li>
+            </ul>
+        </div>
+    </div>
 
 </Template>

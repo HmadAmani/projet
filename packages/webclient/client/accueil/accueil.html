@@ -1,10 +1,13 @@
 
 <Template name="accueil">
-    {{>map}}
+
     <section class="category-area-two control-car mar-bottom">
         <div class="container-fluid">
             <div class="row">
                 <div class="product-title-area">
+
+                    {{>map}}
+
                     <h3><span>Annonces Pro</span></h3>
                 </div>
                 {{#each list_voiture_acceuil}}
@@ -22,7 +25,7 @@
                             </div>
                             <div class="action-btn">
                                 <a data_id="{{_id}}" id="adview_save_ad_main_btn" class="btn btn-large js-save-ad btn-block" href="#" rel="nofollow">
-                                    <i class="fonticon-heart-empty fonticon-color-pink active fonticon-horizontal-fix"></i> Sauvegarder l'annonce
+                                    <i class="fa fa-heart" aria-hidden="true"></i> Sauvegarder l'annonce
                                 </a>
 
                             </div>
